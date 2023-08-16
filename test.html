@@ -1,0 +1,3850 @@
+<html>
+  <head>
+    <style id="quillStyle">
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,500&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Festive&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Andada+Pro&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Georama&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+      .ql-font-roboto {
+        font-family: "Roboto Mono, monospace";
+      }
+
+      .ql-font-arial {
+        font-family: arial, helvetica, sans-serif;
+      }
+
+      .ql-font-arialBlack {
+        font-family: arial black, avant garde, arial;
+      }
+      .ql-font-bookAntiqua {
+        font-family: "book antiqua", palatino;
+      }
+      .ql-font-Cabin {
+        font-family: Cabin, sans-serif;
+      }
+      .ql-font-comicSansMS {
+        font-family: "comic sans ms", sans-serif;
+      }
+      .ql-font-courierNew {
+        font-family: "courier new", courier;
+      }
+      .ql-font-CrimsonText {
+        font-family: "Crimson Text", serif;
+      }
+      .ql-font-georgia {
+        font-family: georgia, palatino;
+      }
+      .ql-font-helvetica {
+        font-family: helvetica, sans-serif;
+      }
+      .ql-font-impact {
+        font-family: impact, chicago;
+      }
+      .ql-font-Lato {
+        font-family: Lato, sans-serif;
+      }
+      .ql-font-LobsterTwo {
+        font-family: "Lobster Two", cursive;
+      }
+      .ql-font-Montserrat {
+        font-family: Montserrat, sans-serif;
+      }
+      .ql-font-OldStandardTT {
+        font-family: "Old Standard TT", serif;
+      }
+      .ql-font-OpenSans {
+        font-family: "Open Sans", sans-serif;
+      }
+      .ql-font-Pacifico {
+        font-family: "Pacifico", cursive;
+      }
+      .ql-font-PlayfairDisplay {
+        font-family: "Playfair Display", serif;
+      }
+      .ql-font-Raleway {
+        font-family: Raleway, sans-serif;
+      }
+      .ql-font-Rubik {
+        font-family: Rubik, sans-serif;
+      }
+      .ql-font-SourceSansPro {
+        font-family: "Source Sans Pro", sans-serif;
+      }
+      .ql-font-tahoma {
+        font-family: tahoma, arial, helvetica, sans-serif;
+      }
+      .ql-font-terminal {
+        font-family: terminal, monaco;
+      }
+      .ql-font-timesNewRoman {
+        font-family: "times new roman", times;
+      }
+      .ql-font-trebuchetMS {
+        font-family: "trebuchet ms", geneva;
+      }
+      .ql-font-verdana {
+        font-family: verdana, geneva;
+      }
+      .ql-font-Ubuntu {
+        font-family: "Ubuntu";
+      }
+      .textWrapper {
+        cursor: text;
+      }
+      .textWrapper p {
+        text-align: left;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      .textWrapper p,
+      .textWrapper ol,
+      .textWrapper ul,
+      .textWrapper pre,
+      .textWrapper blockquote,
+      .textWrapper h1,
+      .textWrapper h2,
+      .textWrapper h3,
+      .textWrapper h4,
+      .textWrapper h5,
+      .textWrapper h6 {
+        margin: 0;
+        padding: 0;
+        counter-reset: list-1 list-2 list-3 list-4 list-5 list-6 list-7 list-8
+          list-9;
+      }
+      .textWrapper ol,
+      .textWrapper ul {
+        padding-left: 1.5em;
+        margin: 0;
+      }
+
+      .textWrapper ol > li,
+      .textWrapper ul > li {
+        list-style-type: none;
+      }
+      .textWrapper ul > li::before {
+      }
+      .textWrapper ul[data-checked="true"],
+      .textWrapper ul[data-checked="false"] {
+        pointer-events: none;
+      }
+      .textWrapper ul[data-checked="true"] > li,
+      .textWrapper ul[data-checked="false"] > li {
+        pointer-events: all;
+      }
+      .textWrapper ul[data-checked="true"] > li::before,
+      .textWrapper ul[data-checked="false"] > li::before {
+        color: #777;
+        cursor: pointer;
+        pointer-events: all;
+      }
+      .textWrapper ul[data-checked="true"] > li::before {
+      }
+      .textWrapper ul[data-checked="false"] > li::before {
+      }
+      .textWrapper li::before {
+        display: inline-block;
+        white-space: nowrap;
+        width: 1.2em;
+      }
+      .textWrapper li:not(.ql-direction-rtl)::before {
+        margin-left: -1.5em;
+        margin-right: 0.3em;
+        text-align: right;
+      }
+      .textWrapper li.ql-direction-rtl::before {
+        margin-left: 0.3em;
+        margin-right: -1.5em;
+      }
+      .textWrapper ol li:not(.ql-direction-rtl),
+      .textWrapper ul li:not(.ql-direction-rtl) {
+        padding-left: 1.5em;
+      }
+      .textWrapper ol li.ql-direction-rtl,
+      .textWrapper ul li.ql-direction-rtl {
+        padding-right: 1.5em;
+      }
+      .textWrapper ol li {
+        counter-reset: list-1 list-2 list-3 list-4 list-5 list-6 list-7 list-8
+          list-9;
+        counter-increment: list-0;
+      }
+      .textWrapper ol li:before {
+        content: counter(list-0, decimal) ". ";
+      }
+      .textWrapper ol li.ql-indent-1 {
+        counter-increment: list-1;
+      }
+      .textWrapper ol li.ql-indent-1:before {
+        content: counter(list-1, lower-alpha) ". ";
+      }
+      .textWrapper ol li.ql-indent-1 {
+        counter-reset: list-2 list-3 list-4 list-5 list-6 list-7 list-8 list-9;
+      }
+      .textWrapper ol li.ql-indent-2 {
+        counter-increment: list-2;
+      }
+      .textWrapper ol li.ql-indent-2:before {
+        content: counter(list-2, lower-roman) ". ";
+      }
+      .textWrapper ol li.ql-indent-2 {
+        counter-reset: list-3 list-4 list-5 list-6 list-7 list-8 list-9;
+      }
+      .textWrapper ol li.ql-indent-3 {
+        counter-increment: list-3;
+      }
+      .textWrapper ol li.ql-indent-3:before {
+        content: counter(list-3, decimal) ". ";
+      }
+      .textWrapper ol li.ql-indent-3 {
+        counter-reset: list-4 list-5 list-6 list-7 list-8 list-9;
+      }
+      .textWrapper ol li.ql-indent-4 {
+        counter-increment: list-4;
+      }
+      .textWrapper ol li.ql-indent-4:before {
+        content: counter(list-4, lower-alpha) ". ";
+      }
+      .textWrapper ol li.ql-indent-4 {
+        counter-reset: list-5 list-6 list-7 list-8 list-9;
+      }
+      .textWrapper ol li.ql-indent-5 {
+        counter-increment: list-5;
+      }
+      .textWrapper ol li.ql-indent-5:before {
+        content: counter(list-5, lower-roman) ". ";
+      }
+      .textWrapper ol li.ql-indent-5 {
+        counter-reset: list-6 list-7 list-8 list-9;
+      }
+      .textWrapper ol li.ql-indent-6 {
+        counter-increment: list-6;
+      }
+      .textWrapper ol li.ql-indent-6:before {
+        content: counter(list-6, decimal) ". ";
+      }
+      .textWrapper ol li.ql-indent-6 {
+        counter-reset: list-7 list-8 list-9;
+      }
+      .textWrapper ol li.ql-indent-7 {
+        counter-increment: list-7;
+      }
+      .textWrapper ol li.ql-indent-7:before {
+        content: counter(list-7, lower-alpha) ". ";
+      }
+      .textWrapper ol li.ql-indent-7 {
+        counter-reset: list-8 list-9;
+      }
+      .textWrapper ol li.ql-indent-8 {
+        counter-increment: list-8;
+      }
+      .textWrapper ol li.ql-indent-8:before {
+        content: counter(list-8, lower-roman) ". ";
+      }
+      .textWrapper ol li.ql-indent-8 {
+        counter-reset: list-9;
+      }
+      .textWrapper ol li.ql-indent-9 {
+        counter-increment: list-9;
+      }
+      .textWrapper ol li.ql-indent-9:before {
+        content: counter(list-9, decimal) ". ";
+      }
+      .textWrapper .ql-indent-1:not(.ql-direction-rtl) {
+        padding-left: 3em;
+      }
+      .textWrapper li.ql-indent-1:not(.ql-direction-rtl) {
+        padding-left: 4.5em;
+      }
+      .textWrapper .ql-indent-1.ql-direction-rtl.ql-align-right {
+        padding-right: 3em;
+      }
+      .textWrapper li.ql-indent-1.ql-direction-rtl.ql-align-right {
+        padding-right: 4.5em;
+      }
+      .textWrapper .ql-indent-2:not(.ql-direction-rtl) {
+        padding-left: 6em;
+      }
+      .textWrapper li.ql-indent-2:not(.ql-direction-rtl) {
+        padding-left: 7.5em;
+      }
+      .textWrapper .ql-indent-2.ql-direction-rtl.ql-align-right {
+        padding-right: 6em;
+      }
+      .textWrapper li.ql-indent-2.ql-direction-rtl.ql-align-right {
+        padding-right: 7.5em;
+      }
+      .textWrapper .ql-indent-3:not(.ql-direction-rtl) {
+        padding-left: 9em;
+      }
+      .textWrapper li.ql-indent-3:not(.ql-direction-rtl) {
+        padding-left: 10.5em;
+      }
+      .textWrapper .ql-indent-3.ql-direction-rtl.ql-align-right {
+        padding-right: 9em;
+      }
+      .textWrapper li.ql-indent-3.ql-direction-rtl.ql-align-right {
+        padding-right: 10.5em;
+      }
+      .textWrapper .ql-indent-4:not(.ql-direction-rtl) {
+        padding-left: 12em;
+      }
+      .textWrapper li.ql-indent-4:not(.ql-direction-rtl) {
+        padding-left: 13.5em;
+      }
+      .textWrapper .ql-indent-4.ql-direction-rtl.ql-align-right {
+        padding-right: 12em;
+      }
+      .textWrapper li.ql-indent-4.ql-direction-rtl.ql-align-right {
+        padding-right: 13.5em;
+      }
+      .textWrapper .ql-indent-5:not(.ql-direction-rtl) {
+        padding-left: 15em;
+      }
+      .textWrapper li.ql-indent-5:not(.ql-direction-rtl) {
+        padding-left: 16.5em;
+      }
+      .textWrapper .ql-indent-5.ql-direction-rtl.ql-align-right {
+        padding-right: 15em;
+      }
+      .textWrapper li.ql-indent-5.ql-direction-rtl.ql-align-right {
+        padding-right: 16.5em;
+      }
+      .textWrapper .ql-indent-6:not(.ql-direction-rtl) {
+        padding-left: 18em;
+      }
+      .textWrapper li.ql-indent-6:not(.ql-direction-rtl) {
+        padding-left: 19.5em;
+      }
+      .textWrapper .ql-indent-6.ql-direction-rtl.ql-align-right {
+        padding-right: 18em;
+      }
+      .textWrapper li.ql-indent-6.ql-direction-rtl.ql-align-right {
+        padding-right: 19.5em;
+      }
+      .textWrapper .ql-indent-7:not(.ql-direction-rtl) {
+        padding-left: 21em;
+      }
+      .textWrapper li.ql-indent-7:not(.ql-direction-rtl) {
+        padding-left: 22.5em;
+      }
+      .textWrapper .ql-indent-7.ql-direction-rtl.ql-align-right {
+        padding-right: 21em;
+      }
+      .textWrapper li.ql-indent-7.ql-direction-rtl.ql-align-right {
+        padding-right: 22.5em;
+      }
+      .textWrapper .ql-indent-8:not(.ql-direction-rtl) {
+        padding-left: 24em;
+      }
+      .textWrapper li.ql-indent-8:not(.ql-direction-rtl) {
+        padding-left: 25.5em;
+      }
+      .textWrapper .ql-indent-8.ql-direction-rtl.ql-align-right {
+        padding-right: 24em;
+      }
+      .textWrapper li.ql-indent-8.ql-direction-rtl.ql-align-right {
+        padding-right: 25.5em;
+      }
+      .textWrapper .ql-indent-9:not(.ql-direction-rtl) {
+        padding-left: 27em;
+      }
+      .textWrapper li.ql-indent-9:not(.ql-direction-rtl) {
+        padding-left: 28.5em;
+      }
+      .textWrapper .ql-indent-9.ql-direction-rtl.ql-align-right {
+        padding-right: 27em;
+      }
+      .textWrapper li.ql-indent-9.ql-direction-rtl.ql-align-right {
+        padding-right: 28.5em;
+      }
+      .textWrapper .ql-video {
+        display: block;
+        max-width: 100%;
+      }
+      .textWrapper .ql-video.ql-align-center {
+        margin: 0 auto;
+      }
+      .textWrapper .ql-video.ql-align-right {
+        margin: 0 0 0 auto;
+      }
+      .textWrapper .ql-bg-black {
+        background-color: #000;
+      }
+      .textWrapper .ql-bg-red {
+        background-color: #e60000;
+      }
+      .textWrapper .ql-bg-orange {
+        background-color: #f90;
+      }
+      .textWrapper .ql-bg-yellow {
+        background-color: #ff0;
+      }
+      .textWrapper .ql-bg-green {
+        background-color: #008a00;
+      }
+      .textWrapper .ql-bg-blue {
+        background-color: #06c;
+      }
+      .textWrapper .ql-bg-purple {
+        background-color: #93f;
+      }
+      .textWrapper .ql-color-white {
+        color: #fff;
+      }
+      .textWrapper .ql-color-red {
+        color: #e60000;
+      }
+      .textWrapper .ql-color-orange {
+        color: #f90;
+      }
+      .textWrapper .ql-color-yellow {
+        color: #ff0;
+      }
+      .textWrapper .ql-color-green {
+        color: #008a00;
+      }
+      .textWrapper .ql-color-blue {
+        color: #06c;
+      }
+      .textWrapper .ql-color-purple {
+        color: #93f;
+      }
+      .textWrapper .ql-font-serif {
+        font-family: Georgia, Times New Roman, serif;
+      }
+      .textWrapper .ql-font-monospace {
+        font-family: Monaco, Courier New, monospace;
+      }
+      .textWrapper .ql-size-small {
+        font-size: 0.75em;
+      }
+      .textWrapper .ql-size-large {
+        font-size: 1.5em;
+      }
+      .textWrapper .ql-size-huge {
+        font-size: 2.5em;
+      }
+      .textWrapper .ql-direction-rtl {
+        direction: rtl;
+        text-align: inherit;
+      }
+      .textWrapper .ql-align-center {
+        text-align: center;
+      }
+      .textWrapper .ql-align-left {
+        text-align: left;
+      }
+      .textWrapper .ql-align-justify {
+        text-align: justify;
+      }
+      .textWrapper .ql-align-right {
+        text-align: right;
+      }
+      .textWrapper.ql-blank::before {
+        color: rgba(0, 0, 0, 0.6);
+        content: attr(data-placeholder);
+        font-style: italic;
+        left: 15px;
+        pointer-events: none;
+        position: absolute;
+        right: 15px;
+      }
+
+      /*// react quill editor new css*/
+
+      .ql-font-Ubuntu,
+      span[data-value="Ubuntu"] {
+        font-family: "Ubuntu";
+      }
+      .ql-font-roboto,
+      span[data-value="roboto"] {
+        font-family: "Roboto Mono, monospace";
+      }
+
+      .ql-font-arial,
+      span[data-value="arial"] {
+        font-family: arial, helvetica, sans-serif;
+      }
+
+      .ql-font-arial-black,
+      span[data-value="arial-black"] {
+        font-family: arial black, avant garde, arial;
+      }
+      .ql-font-book-antiqua,
+      span[data-value="book-antiqua"] {
+        font-family: "book antiqua", palatino;
+      }
+      .ql-font-Cabin,
+      span[data-value="Cabin"] {
+        font-family: Cabin, sans-serif;
+      }
+      .ql-font-comic-sans-ms,
+      span[data-value="comic-sans-ms"] {
+        font-family: "comic sans ms", sans-serif;
+      }
+      .ql-font-courier-new,
+      span[data-value="courier-new"] {
+        font-family: "courier new", courier;
+      }
+      .ql-font-Crimson-Text,
+      span[data-value="Crimson-Text"] {
+        font-family: "Crimson Text", serif;
+      }
+      .ql-font-georgia,
+      span[data-value="georgia"] {
+        font-family: georgia, palatino;
+      }
+      .ql-font-helvetica,
+      span[data-value="helvetica"] {
+        font-family: helvetica, sans-serif;
+      }
+      .ql-font-impact,
+      span[data-value="impact"] {
+        font-family: impact, chicago;
+      }
+      .ql-font-Lato,
+      span[data-value="Lato"] {
+        font-family: Lato, sans-serif;
+      }
+      .ql-font-Lobster-Two,
+      span[data-value="Lobster-Two"] {
+        font-family: "Lobster Two", cursive;
+      }
+      .ql-font-Montserrat,
+      span[data-value="Montserrat"] {
+        font-family: Montserrat, sans-serif;
+      }
+      .ql-font-Old-Standard-TT,
+      span[data-value="Old-Standard-TT"] {
+        font-family: "Old Standard TT", serif;
+      }
+      .ql-font-Open-Sans,
+      span[data-value="Open-Sans"] {
+        font-family: "Open Sans", sans-serif;
+      }
+      .ql-font-Pacifico,
+      span[data-value="Pacifico"] {
+        font-family: "Pacifico", cursive;
+      }
+      .ql-font-Playfair-Display,
+      span[data-value="Playfair-Display"] {
+        font-family: "Playfair Display", serif;
+      }
+      .ql-font-Raleway,
+      span[data-value="Raleway"] {
+        font-family: Raleway, sans-serif;
+      }
+      .ql-font-Rubik,
+      span[data-value="Rubik"] {
+        font-family: Rubik, sans-serif;
+      }
+      .ql-font-Source-Sans-Pro,
+      span[data-value="Source-Sans-Pro"] {
+        font-family: "Source Sans Pro", sans-serif;
+      }
+      .ql-font-tahoma,
+      span[data-value="tahoma"] {
+        font-family: tahoma, arial, helvetica, sans-serif;
+      }
+      .ql-font-terminal,
+      span[data-value="terminal"] {
+        font-family: terminal, monaco;
+      }
+      .ql-font-times-new-roman,
+      span[data-value="times-new-roman"] {
+        font-family: "times new roman", times;
+      }
+      .ql-font-trebuchet-ms,
+      span[data-value="trebuchet-ms"] {
+        font-family: "trebuchet ms", geneva;
+      }
+      .ql-font-verdana,
+      span[data-value="verdana"] {
+        font-family: verdana, geneva;
+      }
+      .textWrapper ul > li::before {
+        content: "•";
+      }
+      .textWrapper blockquote {
+        border-left: 4px solid #ccc;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        padding-left: 16px;
+      }
+      li span {
+        list-style-type: none;
+      }
+      li span::marker {
+        content: "";
+      }
+      td > ul,
+      td > ol,
+      td > p {
+        margin: 0px;
+      }
+      td > p {
+        line-height: inherit;
+      }
+    </style>
+    <style id="customFontString">
+      @font-face {
+        font-family: OpenSansVariableFont_wdth, wght;
+        src: url("http://private-api-test-acquigo.xerago.com/v3/font/545daf31-d394-4837-ab87-74f4cd9bd31c_OpenSans-VariableFont_wdth,wght.ttf");
+      }
+      @font-face {
+        font-family: OpenSansItalicVariableFont_wdth, wght;
+        src: url("http://private-api-test-acquigo.xerago.com/v3/font/f0931bbf-0510-4d2b-9fc4-a6d91795ceb3_OpenSans-Italic-VariableFont_wdth,wght.ttf");
+      }
+    </style>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+    <title>Page Title</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+  </head>
+  <body analyticsId="IoMK75Df5XhqgHoYjiS7WcWL8rIxVNcb">
+    <!-- Matomo Image Tracker -->
+
+    <img
+      src="https://stats.xerago.com/matomo.php?idsite=7&amp;rec=1&action_name=impression&e_c=imagetracking&e_a=impressions&e_n=Image4556"
+      style="border: 0"
+      alt=""
+    />
+
+    <!-- End Matomo -->
+
+    <div
+      id="container_1ftp7778a4glhh6gblm0h5iadu0nn4"
+      style="width: 1440px; height: 800px; position: relative; margin: 0px auto"
+    >
+      <div
+        id="empty_row"
+        class="row"
+        style="padding: 0px 10px; max-width: 100%; height: 0px"
+      >
+        <div
+          id="empty_col"
+          style="display: block; width: 100%; outline: none; height: 100%"
+        ></div>
+      </div>
+      <div
+        id="row_nd61wzuo3v1g9velewyzddr"
+        class="row"
+        style="
+          padding: 0px 15px;
+          max-width: 100%;
+          min-height: 10px;
+          display: flex;
+          height: 68px;
+          border-radius: 0px;
+          background-color: rgb(10, 105, 84);
+        "
+      >
+        <div
+          id="col_nd61mx7fqdc9qb5d1h92rsp"
+          class="column"
+          style="
+            display: block;
+            width: 100%;
+            background-position: top left;
+            height: 100%;
+          "
+        >
+          <div
+            id="menu_nd61vrjnimruupvhlr30zo"
+            style="
+              max-width: 100%;
+              display: inline-flex;
+              font-family: arial, helvetica, sans-serif;
+              font-size: 12px;
+              color: rgb(255, 255, 255);
+              top: 9px;
+              left: 3.8442113442113444%;
+              position: absolute;
+            "
+          >
+            <div
+              id="menu_2453yajkws1ci7yxdnhnc1k"
+              class="mainMenuElement"
+              style="
+                display: inherit;
+                border: none;
+                color: inherit;
+                padding: inherit;
+                font-size: inherit;
+                width: auto;
+                text-decoration: none;
+                font-family: inherit;
+                margin: 20px;
+              "
+            >
+              <a
+                id="menu_2453gen1xg1pp3b7ykzsfs9"
+                class="mainAnchorElement"
+                href=""
+                target="_blank"
+                style="
+                  display: inherit;
+                  border: none;
+                  color: inherit;
+                  padding: inherit;
+                  font-size: inherit;
+                  width: auto;
+                  text-decoration: none;
+                  font-family: inherit;
+                  cursor: pointer;
+                "
+                >Personal</a
+              >
+              <div id="subMenu_Holder" class="subMenu_Holder" style=""></div>
+            </div>
+            <div
+              id="menu_24538c8gjobfme4y1ngbgy6"
+              class="mainMenuElement"
+              style="
+                display: inherit;
+                border: none;
+                color: inherit;
+                padding: inherit;
+                font-size: inherit;
+                width: auto;
+                text-decoration: none;
+                font-family: inherit;
+                margin: 20px;
+              "
+            >
+              <a
+                id="menu_22453ocsjff1yxvkqb4hcq5d"
+                class="mainAnchorElement"
+                href=""
+                target="_blank"
+                style="
+                  display: inherit;
+                  border: none;
+                  color: inherit;
+                  padding: inherit;
+                  font-size: inherit;
+                  width: auto;
+                  text-decoration: none;
+                  font-family: inherit;
+                  cursor: pointer;
+                "
+                >Business</a
+              >
+              <div id="subMenu_Holder" class="subMenu_Holder" style=""></div>
+            </div>
+            <div
+              id="menu_24532psqji5kh3vo1jwkpij"
+              class="mainMenuElement"
+              style="
+                display: inherit;
+                border: none;
+                color: inherit;
+                padding: inherit;
+                font-size: inherit;
+                width: auto;
+                text-decoration: none;
+                font-family: inherit;
+                margin: 20px;
+              "
+            >
+              <a
+                id="menu_24531j0zc4iqmmfbfzm7axd"
+                class="mainAnchorElement"
+                href=""
+                target="_blank"
+                style="
+                  display: inherit;
+                  border: none;
+                  color: inherit;
+                  padding: inherit;
+                  font-size: inherit;
+                  width: auto;
+                  text-decoration: none;
+                  font-family: inherit;
+                  cursor: pointer;
+                "
+                >Corporate</a
+              >
+              <div id="subMenu_Holder" class="subMenu_Holder" style=""></div>
+            </div>
+            <div
+              id="menu_2lh41upb0y3a766ap1n34v3r"
+              class="mainMenuElement"
+              style="
+                display: inherit;
+                border: none;
+                color: inherit;
+                padding: inherit;
+                font-size: inherit;
+                width: auto;
+                text-decoration: none;
+                font-family: inherit;
+                margin: 20px;
+              "
+            >
+              <a
+                id="menu_2lh47ed67g1fbkfvl11b8cmg"
+                class="mainAnchorElement"
+                href=""
+                target="_blank"
+                style="
+                  display: inherit;
+                  border: none;
+                  color: inherit;
+                  padding: inherit;
+                  font-size: inherit;
+                  width: auto;
+                  text-decoration: none;
+                  font-family: inherit;
+                  cursor: pointer;
+                "
+                >Rural</a
+              >
+              <div id="subMenu_Holder" class="subMenu_Holder" style=""></div>
+            </div>
+            <div
+              id="menu_2nabm3x1cexqvq1310pe9kb"
+              class="mainMenuElement"
+              style="
+                display: inherit;
+                border: none;
+                color: inherit;
+                padding: inherit;
+                font-size: inherit;
+                width: auto;
+                text-decoration: none;
+                font-family: inherit;
+                margin: 20px;
+              "
+            >
+              <a
+                id="menu_2nab16obvcl1dcy51wy0zei8"
+                class="mainAnchorElement"
+                href=""
+                target="_blank"
+                style="
+                  display: inherit;
+                  border: none;
+                  color: inherit;
+                  padding: inherit;
+                  font-size: inherit;
+                  width: auto;
+                  text-decoration: none;
+                  font-family: inherit;
+                  cursor: pointer;
+                "
+                >NRI</a
+              >
+              <div id="subMenu_Holder" class="subMenu_Holder" style=""></div>
+            </div>
+            <div
+              id="menu_2pcra7c26urz0m3sdt6hlr"
+              class="mainMenuElement"
+              style="
+                display: inherit;
+                border: none;
+                color: inherit;
+                padding: inherit;
+                font-size: inherit;
+                width: auto;
+                text-decoration: none;
+                font-family: inherit;
+                margin: 20px;
+              "
+            >
+              <a
+                id="menu_2pcr11229j31nudi3u1f98nh9"
+                class="mainAnchorElement"
+                href=""
+                target="_blank"
+                style="
+                  display: inherit;
+                  border: none;
+                  color: inherit;
+                  padding: inherit;
+                  font-size: inherit;
+                  width: auto;
+                  text-decoration: none;
+                  font-family: inherit;
+                  cursor: pointer;
+                "
+                >Govt &amp; Institutional</a
+              >
+              <div id="subMenu_Holder" class="subMenu_Holder" style=""></div>
+            </div>
+          </div>
+          <a
+            id="undefined_nd610e8gh61mnyjw21o8193o"
+            target="_blank"
+            href=""
+            style="
+              background-color: rgb(24, 154, 160);
+              fill: #ffffff;
+              border-radius: 20px;
+              color: white;
+              padding: 10px 18px 10px 18px;
+              font-size: 12px;
+              text-decoration: none;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-direction: row;
+              max-width: 100%;
+              text-align: center;
+              font-family: Helvetica, Arial, Helvetica;
+              opacity: 1;
+              top: 15px;
+              left: 69.66666666666667%;
+              position: absolute;
+            "
+            ><span
+              id="text_span_"
+              style="
+                font-family: inherit;
+                display: inherit;
+                justify-content: inherit;
+                align-items: inherit;
+                height: inherit;
+                width: inherit;
+                max-width: 100%;
+              "
+            >
+              Open Digital FD now!</span
+            ><style>
+              #undefined_nd610e8gh61mnyjw21o8193o:hover {
+                border-radius: 4 !important;
+              }
+            </style> </a
+          ><a
+            id="undefined_nd6tg0e8f199jbdll5sj19"
+            target="_blank"
+            href=""
+            style="
+              background-color: rgb(24, 154, 160);
+              fill: #ffffff;
+              border-radius: 20px;
+              color: white;
+              padding: 10px 18px 10px 18px;
+              font-size: 12px;
+              text-decoration: none;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-direction: row;
+              max-width: 100%;
+              text-align: center;
+              font-family: Helvetica, Arial, Helvetica;
+              opacity: 1;
+              top: 14px;
+              left: 82.91666666666667%;
+              position: absolute;
+            "
+            ><span
+              id="text_span_"
+              style="
+                font-family: inherit;
+                display: inherit;
+                justify-content: inherit;
+                align-items: inherit;
+                height: inherit;
+                width: inherit;
+                max-width: 100%;
+              "
+            >
+              Hello Ujjivan</span
+            ><style>
+              #undefined_nd6tg0e8f199jbdll5sj19:hover {
+                border-radius: 4 !important;
+              }
+            </style> </a
+          ><a
+            id="http://private-api-test-acquigo.xerago.com/v3/images/257ae718-ec74-4fef-9327-e29050427b6c.svg_nd6gk5nk2eg72wu7p3pou"
+            target="_blank"
+            href="#"
+            style="
+              max-width: 100%;
+              text-decoration: none;
+              color: rgb(0, 0, 0);
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-direction: row;
+              font-size: 14px;
+              font-family: Helvetica, Arial, Helvetica;
+              fill: #e3c53d;
+              top: 14px;
+              left: 95.70755633255634%;
+              position: absolute;
+            "
+            ><div
+              id="icon_div_k9ko1cnsdjr1wvnq2z1rpapd0"
+              style="
+                height: 30px;
+                width: 30px;
+                max-width: 100%;
+                fill: inherit;
+                stroke: inherit;
+              "
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 30 30"
+                width="30px"
+                height="30px"
+              >
+                <path
+                  d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z"
+                ></path>
+              </svg></div
+          ></a>
+        </div>
+      </div>
+      <div
+        id="row_qhub8pt7rpqb5c31yvocz6"
+        class="row"
+        style="
+          padding: 0px 15px;
+          max-width: 100%;
+          min-height: 10px;
+          display: flex;
+          height: 523px;
+          border-radius: 0px;
+        "
+      >
+        <div
+          id="col_qhu3rw65j1oul39l1y08jjx"
+          class="column"
+          style="
+            display: block;
+            width: 100%;
+            background-position: top left;
+            height: 100%;
+          "
+        >
+          <a
+            id="undefined_qhu1vbvixn14dd121nbhkz8"
+            href="#"
+            style="
+              height: 518px;
+              width: 98.75%;
+              display: inline-block;
+              top: 68px;
+              left: 0.5803224553224555%;
+              position: absolute;
+            "
+            ><img
+              id="img_origin_o0o213o43tziomlkj1clwo4i"
+              src="http://private-api-test-acquigo.xerago.com/v3/images/8ff1a381-ea71-4cd7-9a60-a05c4333f32e.jpeg"
+              alt=""
+              style="height: 100%; width: auto; max-width: 100%"
+          /></a>
+          <div
+            id="undefined_qhveoniom1x0tub3vratk8"
+            style="
+              width: 91.66666666666666%;
+              height: 60px;
+              transform: rotate(0deg) scale(1, 1);
+              overflow: hidden;
+              fill: rgba(254, 239, 213, 1);
+              border-radius: 9px;
+              top: 72px;
+              left: 4.408993783993782%;
+              position: absolute;
+            "
+          >
+            <svg
+              preserveAspectRatio="none"
+              data-bbox="15.305 10.052 123 123"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="15.305 10.052 123 123"
+              role="img"
+              style="
+                width: 100%;
+                height: 100%;
+                fill: inherit;
+                stroke: inherit;
+                stroke-width: inherit;
+              "
+            >
+              <g>
+                <path d="M138.305 10.052v123h-123v-123h123z"></path>
+              </g>
+            </svg>
+          </div>
+          <div
+            id="menu_qhv5dbidw168cmenbdmwgm"
+            style="
+              max-width: 100%;
+              display: inline-flex;
+              font-family: Helvetica, Arial, Helvetica;
+              font-size: 15px;
+              color: rgb(0, 0, 0);
+              top: 75px;
+              left: 50.06118881118879%;
+              position: absolute;
+            "
+          >
+            <div
+              id="menu_16ox8g2ngol15674aq477o2i"
+              class="mainMenuElement"
+              style="
+                display: inherit;
+                border: none;
+                color: inherit;
+                padding: inherit;
+                font-size: inherit;
+                width: auto;
+                text-decoration: none;
+                font-family: inherit;
+                margin: 20px;
+              "
+            >
+              <a
+                id="menu_16ox81f26v6w1b38q3v1om9xt9"
+                class="mainAnchorElement"
+                href=""
+                target="_blank"
+                style="
+                  display: inherit;
+                  border: none;
+                  color: inherit;
+                  padding: inherit;
+                  font-size: inherit;
+                  width: auto;
+                  text-decoration: none;
+                  font-family: inherit;
+                  cursor: pointer;
+                "
+                >Save</a
+              >
+              <div id="subMenu_Holder" class="subMenu_Holder" style=""></div>
+            </div>
+            <div
+              id="menu_16ox8wrpxzs1h93w1012wcp0e"
+              class="mainMenuElement"
+              style="
+                display: inherit;
+                border: none;
+                color: inherit;
+                padding: inherit;
+                font-size: inherit;
+                width: auto;
+                text-decoration: none;
+                font-family: inherit;
+                margin: 20px;
+              "
+            >
+              <a
+                id="menu_216ox81lu5zd21skdpf3vemhgl"
+                class="mainAnchorElement"
+                href=""
+                target="_blank"
+                style="
+                  display: inherit;
+                  border: none;
+                  color: inherit;
+                  padding: inherit;
+                  font-size: inherit;
+                  width: auto;
+                  text-decoration: none;
+                  font-family: inherit;
+                  cursor: pointer;
+                "
+                >Invest</a
+              >
+              <div id="subMenu_Holder" class="subMenu_Holder" style=""></div>
+            </div>
+            <div
+              id="menu_16ox8jlr9vl160coez1h2d4cu"
+              class="mainMenuElement"
+              style="
+                display: inherit;
+                border: none;
+                color: inherit;
+                padding: inherit;
+                font-size: inherit;
+                width: auto;
+                text-decoration: none;
+                font-family: inherit;
+                margin: 20px;
+              "
+            >
+              <a
+                id="menu_16ox81u0l7251x4leid1vamo1p"
+                class="mainAnchorElement"
+                href=""
+                target="_blank"
+                style="
+                  display: inherit;
+                  border: none;
+                  color: inherit;
+                  padding: inherit;
+                  font-size: inherit;
+                  width: auto;
+                  text-decoration: none;
+                  font-family: inherit;
+                  cursor: pointer;
+                "
+                >Borrow</a
+              >
+              <div id="subMenu_Holder" class="subMenu_Holder" style=""></div>
+            </div>
+            <div
+              id="menu_17fgd1qg9u90sc7gxsvj8fhn"
+              class="mainMenuElement"
+              style="
+                display: inherit;
+                border: none;
+                color: inherit;
+                padding: inherit;
+                font-size: inherit;
+                width: auto;
+                text-decoration: none;
+                font-family: inherit;
+                margin: 20px;
+              "
+            >
+              <a
+                id="menu_17fgd17i7sl93k4l8w1vl2fv2"
+                class="mainAnchorElement"
+                href=""
+                target="_blank"
+                style="
+                  display: inherit;
+                  border: none;
+                  color: inherit;
+                  padding: inherit;
+                  font-size: inherit;
+                  width: auto;
+                  text-decoration: none;
+                  font-family: inherit;
+                  cursor: pointer;
+                "
+                >Insure</a
+              >
+              <div id="subMenu_Holder" class="subMenu_Holder" style=""></div>
+            </div>
+            <div
+              id="menu_17h4t16r304a205ed21kz603h"
+              class="mainMenuElement"
+              style="
+                display: inherit;
+                border: none;
+                color: inherit;
+                padding: inherit;
+                font-size: inherit;
+                width: auto;
+                text-decoration: none;
+                font-family: inherit;
+                margin: 20px;
+              "
+            >
+              <a
+                id="menu_17h4txm4acb16vzucq1ijipqn"
+                class="mainAnchorElement"
+                href=""
+                target="_blank"
+                style="
+                  display: inherit;
+                  border: none;
+                  color: inherit;
+                  padding: inherit;
+                  font-size: inherit;
+                  width: auto;
+                  text-decoration: none;
+                  font-family: inherit;
+                  cursor: pointer;
+                "
+                >Card</a
+              >
+              <div id="subMenu_Holder" class="subMenu_Holder" style=""></div>
+            </div>
+            <div
+              id="menu_17nw51qqjiyq78te43xlt5p0"
+              class="mainMenuElement"
+              style="
+                display: inherit;
+                border: none;
+                color: inherit;
+                padding: inherit;
+                font-size: inherit;
+                width: auto;
+                text-decoration: none;
+                font-family: inherit;
+                margin: 20px;
+              "
+            >
+              <a
+                id="menu_17nw5newjmx1uo94un18eose7"
+                class="mainAnchorElement"
+                href=""
+                target="_blank"
+                style="
+                  display: inherit;
+                  border: none;
+                  color: inherit;
+                  padding: inherit;
+                  font-size: inherit;
+                  width: auto;
+                  text-decoration: none;
+                  font-family: inherit;
+                  cursor: pointer;
+                "
+                >Api Banking</a
+              >
+              <div id="subMenu_Holder" class="subMenu_Holder" style=""></div>
+            </div>
+          </div>
+          <div
+            id="undefined_qhv1e8bw2p1cuhfr1gmzhi9"
+            class="textWrapper"
+            style="
+              font-family: Helvetica, Arial, Helvetica;
+              width: 32.708333333333336%;
+              line-height: 36px;
+              top: 289px;
+              left: 58.12500000000001%;
+              position: absolute;
+            "
+          >
+            <div
+              style="
+                color: rgb(0, 0, 0);
+                font-size: 16px;
+                font-family: Helvetica, Arial, Helvetica;
+                margin: 0px;
+                max-width: 100%;
+                display: inherit;
+              "
+            >
+              <p>
+                <span style="font-size: 58px; color: rgb(252, 202, 69)"
+                  >one financial step at a time!</span
+                >
+              </p>
+            </div>
+          </div>
+          <a
+            id="undefined_qhvwd2zjt1fdhiks13cur0k"
+            href="#"
+            style="
+              height: 37px;
+              width: 23.819444444444443%;
+              display: inline-block;
+              top: 83px;
+              left: 5.709984459984463%;
+              position: absolute;
+            "
+            ><img
+              id="img_origin_whnn15hvv1k1ls5hbwub1k14"
+              src="http://private-api-test-acquigo.xerago.com/v3/images/540bf122-8907-4ebe-b15f-993c876ca1f3.png"
+              alt=""
+              style="height: 100%; width: auto; max-width: 100%"
+          /></a>
+          <div
+            id="undefined_qhv1sotmlj1u1g0eswwwo2e"
+            class="textWrapper"
+            style="
+              font-family: Helvetica, Arial, Helvetica;
+              width: 20.833333333333336%;
+              line-height: 19px;
+              top: 240px;
+              left: 58.12985625485627%;
+              position: absolute;
+            "
+          >
+            <div
+              style="
+                color: rgb(0, 0, 0);
+                font-size: 16px;
+                font-family: Helvetica, Arial, Helvetica;
+                margin: 0px;
+                max-width: 100%;
+                display: inherit;
+              "
+            >
+              <p>
+                <span style="font-size: 34px; color: rgb(250, 250, 250)"
+                  >Build a better life,</span
+                >
+              </p>
+            </div>
+          </div>
+          <a
+            id="undefined_qhv1b9qypv1g42ht312lgq72"
+            target="_blank"
+            href=""
+            style="
+              background-color: rgb(247, 143, 53);
+              fill: #ffffff;
+              border-radius: 10px;
+              color: white;
+              padding: 10px 20px 10px 20px;
+              font-size: 16px;
+              text-decoration: none;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-direction: row;
+              max-width: 100%;
+              text-align: center;
+              font-family: Helvetica, Arial, Helvetica;
+              opacity: 1;
+              top: 418px;
+              left: 58.18424630924631%;
+              position: absolute;
+            "
+            ><span
+              id="text_span_"
+              style="
+                font-family: inherit;
+                display: inherit;
+                justify-content: inherit;
+                align-items: inherit;
+                height: inherit;
+                width: inherit;
+                max-width: 100%;
+              "
+            >
+              Know More</span
+            ><style>
+              #undefined_qhv1b9qypv1g42ht312lgq72:hover {
+                border-radius: 4 !important;
+              }
+            </style> </a
+          ><a
+            id="undefined_qhv902w6z1h77beu1mhjgqf"
+            target="_blank"
+            href=""
+            style="
+              background-color: rgb(254, 239, 213);
+              fill: #ffffff;
+              border: 1px solid rgba(16, 15, 15, 1);
+              border-radius: 11px;
+              color: rgb(0, 0, 0);
+              padding: 10px 25px 10px 25px;
+              font-size: 16px;
+              text-decoration: none;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-direction: row;
+              max-width: 100%;
+              text-align: center;
+              font-family: Helvetica, Arial, Helvetica;
+              opacity: 1;
+              top: 82px;
+              left: 86.33333333333334%;
+              position: absolute;
+            "
+            ><span
+              id="text_span_"
+              style="
+                font-family: inherit;
+                display: inherit;
+                justify-content: inherit;
+                align-items: inherit;
+                height: inherit;
+                width: inherit;
+                max-width: 100%;
+              "
+            >
+              Login</span
+            ><style>
+              #undefined_qhv902w6z1h77beu1mhjgqf:hover {
+                border-radius: 4 !important;
+              }
+            </style>
+          </a>
+        </div>
+      </div>
+      <div
+        id="row_z1u1gl3uvxdzjv0f1wzlco2"
+        class="row"
+        style="
+          padding: 0px 15px;
+          max-width: 100%;
+          min-height: 10px;
+          display: flex;
+          height: 100px;
+          border-radius: 0px;
+          background-color: rgb(14, 187, 182);
+        "
+      >
+        <div
+          id="col_z1ufjqjya19159zec9yvqn"
+          class="column"
+          style="
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-position: top left;
+          "
+        >
+          <div
+            id="undefined_z1utn7t3ge1ikh4rbmx2r"
+            class="textWrapper"
+            style="
+              font-family: Helvetica, Arial, Helvetica;
+              width: 46.31944444444444%;
+              line-height: 19px;
+              top: 623px;
+              left: 30.209790209790206%;
+              position: absolute;
+            "
+          >
+            <div
+              style="
+                color: rgb(0, 0, 0);
+                font-size: 16px;
+                font-family: Helvetica, Arial, Helvetica;
+                margin: 0px;
+                max-width: 100%;
+                display: inherit;
+              "
+            >
+              <p>
+                <strong style="font-size: 32px; color: rgb(7, 97, 98)"
+                  >Bank easier with our Products &amp; Services</strong
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        id="row_18n6lnz91j1300t2h1swv5n2"
+        class="row"
+        style="
+          padding: 0px 15px;
+          max-width: 100%;
+          min-height: 10px;
+          display: flex;
+          height: 200px;
+          border-radius: 0px;
+          background-color: rgb(14, 187, 182);
+        "
+      >
+        <div
+          id="col_18n6co82y01mb30lj1dst0w3"
+          class="column"
+          style="
+            display: block;
+            width: 33.334%;
+            height: 100%;
+            background-position: top left;
+          "
+        >
+          <div
+            id="undefined_18n61q237oxx8lnhc1g7tp7c"
+            style="
+              width: 22.430555555555557%;
+              height: 157px;
+              transform: rotate(0deg) scale(1, 1);
+              overflow: hidden;
+              fill: rgba(243, 243, 240, 1);
+              top: 711px;
+              left: 7.940947940947941%;
+              position: absolute;
+            "
+          >
+            <svg
+              preserveAspectRatio="none"
+              data-bbox="15.305 10.052 123 123"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="15.305 10.052 123 123"
+              role="img"
+              style="
+                width: 100%;
+                height: 100%;
+                fill: inherit;
+                stroke: inherit;
+                stroke-width: inherit;
+              "
+            >
+              <g>
+                <path d="M138.305 10.052v123h-123v-123h123z"></path>
+              </g>
+            </svg>
+          </div>
+          <div
+            id="undefined_18n6e1x2qq1xksvq2u6md5j"
+            class="textWrapper"
+            style="
+              font-family: Helvetica, Arial, Helvetica;
+              width: 10.625%;
+              line-height: 19px;
+              top: 747px;
+              left: 8.402292152292151%;
+              position: absolute;
+            "
+          >
+            <div
+              style="
+                color: rgb(0, 0, 0);
+                font-size: 16px;
+                font-family: Helvetica, Arial, Helvetica;
+                margin: 0px;
+                max-width: 100%;
+                display: inherit;
+              "
+            >
+              <p>
+                <span style="font-size: 14px"
+                  >Saving for a rainy day or planning for the future? Our
+                  Savings Accounts are the perfect way to achieve your
+                  goals.</span
+                >
+              </p>
+            </div>
+          </div>
+          <div
+            id="undefined_18n6wq34poz96o6n1b2w8qn"
+            class="textWrapper"
+            style="
+              font-family: Helvetica, Arial, Helvetica;
+              width: 9.791666666666666%;
+              line-height: 19px;
+              top: 716px;
+              left: 8.386266511266511%;
+              position: absolute;
+            "
+          >
+            <div
+              style="
+                color: rgb(0, 0, 0);
+                font-size: 16px;
+                font-family: Helvetica, Arial, Helvetica;
+                margin: 0px;
+                max-width: 100%;
+                display: inherit;
+              "
+            >
+              <p>
+                <strong style="color: rgb(14, 187, 182)"
+                  >Savings Account</strong
+                >
+              </p>
+            </div>
+          </div>
+          <a
+            id="undefined_18n61f8prfa1jerlnze2ot12"
+            href="#"
+            style="
+              height: 148px;
+              width: 7.986111111111111%;
+              display: inline-block;
+              top: 713px;
+              left: 22.14112276612277%;
+              position: absolute;
+            "
+            ><img
+              id="img_origin_18881ly863j12ihgowxj1fje"
+              src="http://private-api-test-acquigo.xerago.com/v3/images/bc10d491-e16e-43c2-9dad-c615bfbc2a57.jpeg"
+              alt=""
+              style="height: 100%; width: auto; max-width: 100%"
+          /></a>
+        </div>
+        <div
+          id="col_18n61xhksqju6nmdtpqzvxh"
+          class="column"
+          style="
+            display: block;
+            width: 33.334%;
+            height: 100%;
+            background-position: top left;
+          "
+        >
+          <div
+            id="undefined_18n6nh3py01m453va1is61x4"
+            style="
+              width: 22.430555555555557%;
+              height: 157px;
+              transform: rotate(0deg) scale(1, 1);
+              overflow: hidden;
+              fill: rgba(243, 243, 240, 1);
+              top: 711px;
+              left: 38.05555555555555%;
+              position: absolute;
+            "
+          >
+            <svg
+              preserveAspectRatio="none"
+              data-bbox="15.305 10.052 123 123"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="15.305 10.052 123 123"
+              role="img"
+              style="
+                width: 100%;
+                height: 100%;
+                fill: inherit;
+                stroke: inherit;
+                stroke-width: inherit;
+              "
+            >
+              <g>
+                <path d="M138.305 10.052v123h-123v-123h123z"></path>
+              </g>
+            </svg>
+          </div>
+          <div
+            id="undefined_18n61ee0zvu1bdmgiiptv6y3"
+            class="textWrapper"
+            style="
+              font-family: Helvetica, Arial, Helvetica;
+              width: 10.625%;
+              line-height: 19px;
+              top: 757px;
+              left: 39.30555555555556%;
+              position: absolute;
+            "
+          >
+            <div
+              style="
+                color: rgb(0, 0, 0);
+                font-size: 16px;
+                font-family: Helvetica, Arial, Helvetica;
+                margin: 0px;
+                max-width: 100%;
+                display: inherit;
+              "
+            >
+              <p>
+                <span style="font-size: 14px"
+                  >Get the flexibility and convenience your business needs to
+                  thrive with our Current Accounts.</span
+                >
+              </p>
+            </div>
+          </div>
+          <div
+            id="undefined_18n6gfbj0z4tdk60cei18m"
+            class="textWrapper"
+            style="
+              font-family: Helvetica, Arial, Helvetica;
+              width: 9.791666666666666%;
+              line-height: 19px;
+              top: 724px;
+              left: 39.23611111111111%;
+              position: absolute;
+            "
+          >
+            <div
+              style="
+                color: rgb(0, 0, 0);
+                font-size: 16px;
+                font-family: Helvetica, Arial, Helvetica;
+                margin: 0px;
+                max-width: 100%;
+                display: inherit;
+              "
+            >
+              <p>
+                <strong style="color: rgb(24, 171, 226)"
+                  >Current Accounts</strong
+                >
+              </p>
+            </div>
+          </div>
+          <a
+            id="undefined_18n61b5qvce1h0r70h1onkl30"
+            href="#"
+            style="
+              height: 148px;
+              width: 7.986111111111111%;
+              display: inline-block;
+              top: 713px;
+              left: 52.22222222222223%;
+              position: absolute;
+            "
+            ><img
+              id="img_origin_18881ly863j12ihgowxj1fje"
+              src="http://private-api-test-acquigo.xerago.com/v3/images/320e517f-0200-4995-b608-867a7c45d764.jpeg"
+              alt=""
+              style="height: 100%; width: auto; max-width: 100%"
+          /></a>
+        </div>
+        <div
+          id="col_18n6s7mm90wdxcql4dnj3f"
+          class="column"
+          style="
+            display: block;
+            width: 33.334%;
+            height: 100%;
+            background-position: top left;
+          "
+        >
+          <div
+            id="undefined_18n6ds8qk91l1ub5a17yu4gx"
+            style="
+              width: 22.430555555555557%;
+              height: 157px;
+              transform: rotate(0deg) scale(1, 1);
+              overflow: hidden;
+              fill: rgba(243, 243, 240, 1);
+              top: 713px;
+              left: 69.16152318318686%;
+              position: absolute;
+            "
+          >
+            <svg
+              preserveAspectRatio="none"
+              data-bbox="15.305 10.052 123 123"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="15.305 10.052 123 123"
+              role="img"
+              style="
+                width: 100%;
+                height: 100%;
+                fill: inherit;
+                stroke: inherit;
+                stroke-width: inherit;
+              "
+            >
+              <g>
+                <path d="M138.305 10.052v123h-123v-123h123z"></path>
+              </g>
+            </svg>
+          </div>
+          <div
+            id="undefined_18n61y5pzcw9km1dp1gij3rf"
+            class="textWrapper"
+            style="
+              font-family: Helvetica, Arial, Helvetica;
+              width: 10.625%;
+              line-height: 19px;
+              top: 757px;
+              left: 70%;
+              position: absolute;
+            "
+          >
+            <div
+              style="
+                color: rgb(0, 0, 0);
+                font-size: 16px;
+                font-family: Helvetica, Arial, Helvetica;
+                margin: 0px;
+                max-width: 100%;
+                display: inherit;
+              "
+            >
+              <p>
+                <span style="font-size: 14px"
+                  >From Housing Loans to Vehicle Loans and Micro Loans, our loan
+                  portfolio has got you covered for all your financial
+                  needs.</span
+                >
+              </p>
+            </div>
+          </div>
+          <a
+            id="undefined_18n61xp86r6wzfdrbwe8rkx"
+            href="#"
+            style="
+              height: 148px;
+              width: 8.194444444444445%;
+              display: inline-block;
+              top: 716px;
+              left: 83.2638888888889%;
+              position: absolute;
+            "
+            ><img
+              id="img_origin_18881ly863j12ihgowxj1fje"
+              src="http://private-api-test-acquigo.xerago.com/v3/images/9bd55612-2dc9-4639-bce0-0ae711eb3baa.jpeg"
+              alt=""
+              style="height: 100%; width: auto; max-width: 100%"
+          /></a>
+          <div
+            id="undefined_18n6eyqpsc1umm7814miq20"
+            class="textWrapper"
+            style="
+              font-family: Helvetica, Arial, Helvetica;
+              width: 4.097222222222222%;
+              line-height: 19px;
+              top: 725px;
+              left: 70.13888888888889%;
+              position: absolute;
+            "
+          >
+            <div
+              style="
+                color: rgb(0, 0, 0);
+                font-size: 16px;
+                font-family: Helvetica, Arial, Helvetica;
+                margin: 0px;
+                max-width: 100%;
+                display: inherit;
+              "
+            >
+              <p><strong style="color: rgb(247, 143, 53)">Loans</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        id="row_1fu1xeuahi1dbq52r1is7yuq"
+        class="row"
+        style="
+          padding: 0px 15px;
+          max-width: 100%;
+          min-height: 10px;
+          display: flex;
+          height: 420px;
+          border-radius: 0px;
+          background-color: rgb(14, 187, 182);
+        "
+      >
+        <div
+          id="col_1fu1zh49uv1d9h71ocrp0x9"
+          class="column"
+          style="
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-position: top left;
+          "
+        >
+          <a
+            id="undefined_1fu11cfmji1m8jwnejfieg3"
+            href="#"
+            style="
+              height: 331px;
+              width: 94.09722222222221%;
+              display: inline-block;
+              top: 921px;
+              left: 4.578153151546971%;
+              position: absolute;
+            "
+            ><img
+              id="img_origin_xieqhy2olvn9i3mw9oaii5"
+              src="http://private-api-test-acquigo.xerago.com/v3/images/e32f56ba-9733-4013-a3e9-eef2f77fed8e.png"
+              alt=""
+              style="height: 100%; width: auto; max-width: 100%"
+          /></a>
+        </div>
+      </div>
+      <div
+        id="row_1fu11ygwxae1u5gbvfvb4pfo"
+        class="row"
+        style="
+          padding: 0px 15px;
+          max-width: 100%;
+          min-height: 10px;
+          display: flex;
+          height: 5px;
+          border-radius: 0px;
+        "
+      >
+        <div
+          id="col_1fu118k0v2v1d6c5551cuu15a"
+          class="column"
+          style="
+            display: block;
+            width: 100%;
+            background-position: top left;
+            height: 100%;
+          "
+        ></div>
+      </div>
+      <div
+        id="row_2ave15fmbysb5lhh8jixxfw"
+        class="row"
+        style="
+          padding: 0px 15px;
+          max-width: 100%;
+          min-height: 10px;
+          display: flex;
+          height: 389px;
+          border-radius: 0px;
+          background-color: rgba(251, 180, 57, 0.19);
+        "
+      >
+        <div
+          id="col_2avevifq5cj3mpv7dk3vos"
+          class="column"
+          style="
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-position: top left;
+          "
+        >
+          <div
+            id="undefined_2aveqlxprb5uqyafq9isx"
+            style="
+              width: 41.66666666666667%;
+              height: 219px;
+              transform: rotate(0deg) scale(1, 1);
+              overflow: hidden;
+              fill: rgba(34, 158, 130, 0.73);
+              border-radius: 25px;
+              top: 1432px;
+              left: 49.30555555555556%;
+              position: absolute;
+            "
+          >
+            <svg
+              preserveAspectRatio="none"
+              data-bbox="15.305 10.052 123 123"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="15.305 10.052 123 123"
+              role="img"
+              style="
+                width: 100%;
+                height: 100%;
+                fill: inherit;
+                stroke: inherit;
+                stroke-width: inherit;
+              "
+            >
+              <g>
+                <path d="M138.305 10.052v123h-123v-123h123z"></path>
+              </g>
+            </svg>
+          </div>
+          <div
+            id="undefined_2ave1bcpvg21j91pnk5wglqo"
+            style="
+              width: 41.66666666666667%;
+              height: 219px;
+              transform: rotate(0deg) scale(1, 1);
+              overflow: hidden;
+              fill: rgba(34, 158, 130, 0.73);
+              border-radius: 25px;
+              top: 1426px;
+              left: 4.97086247086247%;
+              position: absolute;
+            "
+          >
+            <svg
+              preserveAspectRatio="none"
+              data-bbox="15.305 10.052 123 123"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="15.305 10.052 123 123"
+              role="img"
+              style="
+                width: 100%;
+                height: 100%;
+                fill: inherit;
+                stroke: inherit;
+                stroke-width: inherit;
+              "
+            >
+              <g>
+                <path d="M138.305 10.052v123h-123v-123h123z"></path>
+              </g>
+            </svg>
+          </div>
+          <div
+            id="undefined_2avey9aegxuscpa91eylc9t"
+            class="textWrapper"
+            style="
+              font-family: Helvetica, Arial, Helvetica;
+              width: 25.13888888888889%;
+              line-height: 19px;
+              top: 1362px;
+              left: 35.71678321678321%;
+              position: absolute;
+            "
+          >
+            <div
+              style="
+                color: rgb(0, 0, 0);
+                font-size: 16px;
+                font-family: Helvetica, Arial, Helvetica;
+                margin: 0px;
+                max-width: 100%;
+                display: inherit;
+              "
+            >
+              <p>
+                <strong
+                  class="ql-font-bookAntiqua"
+                  style="color: rgb(7, 97, 98); font-size: 36px"
+                  >Customer Testimonials</strong
+                >
+              </p>
+            </div>
+          </div>
+          <div
+            id="undefined_2ave3aw90z1cq922991hq0k"
+            class="textWrapper"
+            style="
+              font-family: Helvetica, Arial, Helvetica;
+              width: 20.833333333333336%;
+              line-height: 19px;
+              top: 1481px;
+              left: 23.61111111111111%;
+              position: absolute;
+            "
+          >
+            <div
+              style="
+                color: rgb(0, 0, 0);
+                font-size: 16px;
+                font-family: Helvetica, Arial, Helvetica;
+                margin: 0px;
+                max-width: 100%;
+                display: inherit;
+              "
+            >
+              <p>
+                <span style="color: rgb(252, 248, 252)"
+                  >I appreciate the convenience of their online banking
+                  platform, which allows me to easily manage my accounts and
+                  conduct transactions from anywhere, at any time.</span
+                >
+              </p>
+            </div>
+          </div>
+          <div
+            id="undefined_2ave12y8fx1ajpv4k11vk66w"
+            class="textWrapper"
+            style="
+              font-family: Helvetica, Arial, Helvetica;
+              width: 20.833333333333336%;
+              line-height: 19px;
+              top: 1481px;
+              left: 67.22222222222223%;
+              position: absolute;
+            "
+          >
+            <div
+              style="
+                color: rgb(0, 0, 0);
+                font-size: 16px;
+                font-family: Helvetica, Arial, Helvetica;
+                margin: 0px;
+                max-width: 100%;
+                display: inherit;
+              "
+            >
+              <p>
+                <span style="color: rgb(244, 241, 240)"
+                  >I appreciate the convenience of their online banking
+                  platform, which allows me to easily manage my accounts and
+                  conduct transactions from anywhere, at any time.</span
+                >
+              </p>
+            </div>
+          </div>
+          <a
+            id="undefined_2ave1h1nsdm14v7r3s2wm7u9"
+            href="#"
+            style="
+              height: 261px;
+              width: 15.277777777777779%;
+              display: inline-block;
+              top: 1416px;
+              left: 50.138888888888886%;
+              position: absolute;
+            "
+            ><img
+              id="img_origin_2i6271gkadj18tns6i1npl9vu"
+              src="http://private-api-test-acquigo.xerago.com/v3/images/6fcff6e0-e66c-4eab-9c5b-5045e38a4453.png"
+              alt=""
+              style="height: 100%; width: auto; max-width: 100%" /></a
+          ><a
+            id="undefined_2avel41kb11pznmps19ofoz"
+            href="#"
+            style="
+              height: 261px;
+              width: 15.277777777777779%;
+              display: inline-block;
+              top: 1411px;
+              left: 6.3262432012432%;
+              position: absolute;
+            "
+            ><img
+              id="img_origin_2i6271gkadj18tns6i1npl9vu"
+              src="http://private-api-test-acquigo.xerago.com/v3/images/f7599d4d-b78f-4e2e-81c9-c121fc1038a3.png"
+              alt=""
+              style="height: 100%; width: auto; max-width: 100%"
+          /></a>
+          <div
+            id="undefined_2aveydoq2e11a3fhz1bxskrj"
+            class="textWrapper"
+            style="
+              font-family: Helvetica, Arial, Helvetica;
+              width: 9.027777777777777%;
+              line-height: 19px;
+              top: 1602px;
+              left: 23.328962703962702%;
+              position: absolute;
+            "
+          >
+            <div
+              style="
+                color: rgb(0, 0, 0);
+                font-size: 16px;
+                font-family: Helvetica, Arial, Helvetica;
+                margin: 0px;
+                max-width: 100%;
+                display: inherit;
+              "
+            >
+              <p>
+                <span style="color: rgb(244, 242, 241)">- Ishanth Kishan</span>
+              </p>
+            </div>
+          </div>
+          <div
+            id="undefined_2aveywxw4dwxcjd51b4tar0"
+            class="textWrapper"
+            style="
+              font-family: Helvetica, Arial, Helvetica;
+              width: 9.027777777777777%;
+              line-height: 19px;
+              top: 1601px;
+              left: 67.22222222222221%;
+              position: absolute;
+            "
+          >
+            <div
+              style="
+                color: rgb(0, 0, 0);
+                font-size: 16px;
+                font-family: Helvetica, Arial, Helvetica;
+                margin: 0px;
+                max-width: 100%;
+                display: inherit;
+              "
+            >
+              <p>
+                <span style="color: rgb(249, 251, 249)">- Peter Cornonn</span>
+              </p>
+            </div>
+          </div>
+          <a
+            id="undefined_2avecdu99e1lpibiu1k56t8c"
+            href="#"
+            style="
+              height: 22px;
+              width: 7.569444444444444%;
+              display: inline-block;
+              top: 1443px;
+              left: 66.80555555555556%;
+              position: absolute;
+            "
+            ><img
+              id="img_origin_2i6271gkadj18tns6i1npl9vu"
+              src="http://private-api-test-acquigo.xerago.com/v3/images/9cb89dcd-90e1-4a3a-979b-c6f897a01c80.png"
+              alt=""
+              style="height: 100%; width: auto; max-width: 100%" /></a
+          ><a
+            id="undefined_2aveu0v4vh1h8ykry6ikd93"
+            href="#"
+            style="
+              height: 22px;
+              width: 7.569444444444444%;
+              display: inline-block;
+              top: 1442px;
+              left: 23.47222222222222%;
+              position: absolute;
+            "
+            ><img
+              id="img_origin_2i6271gkadj18tns6i1npl9vu"
+              src="http://private-api-test-acquigo.xerago.com/v3/images/9cb89dcd-90e1-4a3a-979b-c6f897a01c80.png"
+              alt=""
+              style="height: 100%; width: auto; max-width: 100%"
+          /></a>
+        </div>
+      </div>
+      <div
+        id="row_374a1q4oz3cufnwdftn4tv1"
+        class="row"
+        style="
+          padding: 0px 15px;
+          max-width: 100%;
+          min-height: 10px;
+          display: flex;
+          height: 284px;
+          border-radius: 0px;
+        "
+      >
+        <div
+          id="col_374a10gwzjcl3n3f7eynqkk"
+          class="column"
+          style="
+            display: block;
+            width: 100%;
+            background-position: top left;
+            height: 100%;
+          "
+        >
+          <a
+            id="undefined_374a19rl0sbqok23jpc7ttr"
+            href="#"
+            style="
+              height: 281px;
+              width: 100.06944444444446%;
+              display: inline-block;
+              top: 1706px;
+              left: 0%;
+              position: absolute;
+            "
+            ><img
+              id="img_origin_1z5ua14vzx6tdthi1nemk5ko"
+              src="http://private-api-test-acquigo.xerago.com/v3/images/8acbbac4-35b3-4b4e-a159-0453b9fd3e08.png"
+              alt=""
+              style="height: 100%; width: auto; max-width: 100%"
+          /></a>
+        </div>
+      </div>
+      <div
+        id="row_3iqa13hgfct1npucgb1m6b5cm"
+        class="row"
+        style="
+          padding: 0px 15px;
+          max-width: 100%;
+          min-height: 10px;
+          display: flex;
+          height: 250px;
+          border-radius: 0px;
+          background-color: rgb(4, 85, 86);
+        "
+      >
+        <div
+          id="col_3iqa1r98m9r15a4mtoib2l4a"
+          class="column"
+          style="
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-position: top left;
+          "
+        >
+          <hr
+            id="undefined_3iqa23f7qustoj8w1dih1ku"
+            style="
+              height: 0px;
+              margin: 0px auto;
+              width: 22.569444444444446%;
+              max-width: 100%;
+              top: 2193px;
+              left: 36.875%;
+              position: absolute;
+            "
+          />
+          <hr
+            id="undefined_3iqa1773ufimorp7c1u2tmu6"
+            style="
+              height: 0px;
+              margin: 0px auto;
+              width: 22.569444444444446%;
+              max-width: 100%;
+              top: 2192px;
+              left: 70.55555555555556%;
+              position: absolute;
+            "
+          />
+          <hr
+            id="undefined_3iqa83lqvj1r0hmybzj8lc1"
+            style="
+              height: 0px;
+              margin: 0px auto;
+              width: 22.569444444444446%;
+              max-width: 100%;
+              top: 2191px;
+              left: 5%;
+              position: absolute;
+            "
+          />
+          <hr
+            id="undefined_3iqaefs8fpfkt2bk1oedhuv"
+            style="
+              height: 0px;
+              margin: 0px auto;
+              width: 22.569444444444446%;
+              max-width: 100%;
+              top: 2146px;
+              left: 36.736111111111114%;
+              position: absolute;
+            "
+          />
+          <hr
+            id="undefined_3iqa1hbbol3solth55eomnn"
+            style="
+              height: 0px;
+              margin: 0px auto;
+              width: 22.569444444444446%;
+              max-width: 100%;
+              top: 2145px;
+              left: 70.34722222222223%;
+              position: absolute;
+            "
+          />
+          <hr
+            id="undefined_3iqa45qclgk9p3ecvtjm5z"
+            style="
+              height: 0px;
+              margin: 0px auto;
+              width: 22.569444444444446%;
+              max-width: 100%;
+              top: 2143px;
+              left: 4.791666666666667%;
+              position: absolute;
+            "
+          />
+          <hr
+            id="undefined_3iqa23t96217skrlaq34nmu"
+            style="
+              height: 0px;
+              margin: 0px auto;
+              width: 22.569444444444446%;
+              max-width: 100%;
+              top: 2097px;
+              left: 4.882964257964258%;
+              position: absolute;
+            "
+          />
+          <hr
+            id="undefined_3iqacnwrs6u30s7dyq221p"
+            style="
+              height: 0px;
+              margin: 0px auto;
+              width: 22.569444444444446%;
+              max-width: 100%;
+              top: 2096px;
+              left: 36.80555555555556%;
+              position: absolute;
+            "
+          />
+          <hr
+            id="undefined_3iqaoe36usyi3u1s1vhx0hn"
+            style="
+              height: 0px;
+              margin: 0px auto;
+              width: 22.569444444444446%;
+              max-width: 100%;
+              top: 2094px;
+              left: 70.41666666666667%;
+              position: absolute;
+            "
+          />
+          <a
+            id="undefined_3iqa13xapkt1v67uni1fc6rfg"
+            href="#"
+            style="
+              height: 31px;
+              width: 22.5%;
+              display: inline-block;
+              top: 2017px;
+              left: 4.823232323232323%;
+              position: absolute;
+            "
+            ><img
+              id="img_origin_3svpj1ugs60vf2chni1mm4vd5"
+              src="http://private-api-test-acquigo.xerago.com/v3/images/540bf122-8907-4ebe-b15f-993c876ca1f3.png"
+              alt=""
+              style="height: 100%; width: auto; max-width: 100%"
+          /></a>
+          <div
+            id="undefined_3iqa10qfbu41i4aaz7x9gwkb"
+            class="textWrapper"
+            style="
+              font-family: Helvetica, Arial, Helvetica;
+              width: 10%;
+              line-height: 19px;
+              top: 2134px;
+              left: 70.48611111111113%;
+              position: absolute;
+            "
+          >
+            <div
+              style="
+                color: rgb(0, 0, 0);
+                font-size: 16px;
+                font-family: Helvetica, Arial, Helvetica;
+                margin: 0px;
+                max-width: 100%;
+                display: inherit;
+              "
+            >
+              <p>
+                <span style="color: rgb(250, 249, 250); font-size: 14px"
+                  >Forms &amp; Agreements</span
+                >
+              </p>
+            </div>
+          </div>
+          <div
+            id="undefined_3iqap8tmnp2xsg1g1ubh64e"
+            class="textWrapper"
+            style="
+              font-family: Helvetica, Arial, Helvetica;
+              width: 8.819444444444445%;
+              line-height: 19px;
+              top: 2085px;
+              left: 36.73611111111112%;
+              position: absolute;
+            "
+          >
+            <div
+              style="
+                color: rgb(0, 0, 0);
+                font-size: 16px;
+                font-family: Helvetica, Arial, Helvetica;
+                margin: 0px;
+                max-width: 100%;
+                display: inherit;
+              "
+            >
+              <p>
+                <span style="font-size: 14px; color: rgb(252, 252, 252)"
+                  >Products &amp; services</span
+                >
+              </p>
+            </div>
+          </div>
+          <div
+            id="undefined_3iqa1q042z0ti58eq1bg5rnb"
+            class="textWrapper"
+            style="
+              font-family: Helvetica, Arial, Helvetica;
+              width: 8.61111111111111%;
+              line-height: 19px;
+              top: 2181px;
+              left: 70.62500000000001%;
+              position: absolute;
+            "
+          >
+            <div
+              style="
+                color: rgb(0, 0, 0);
+                font-size: 16px;
+                font-family: Helvetica, Arial, Helvetica;
+                margin: 0px;
+                max-width: 100%;
+                display: inherit;
+              "
+            >
+              <p>
+                <span style="font-size: 14px; color: rgb(247, 247, 247)"
+                  >Knowledge Centre</span
+                >
+              </p>
+            </div>
+          </div>
+          <div
+            id="undefined_3iqa1n9ra621d9cpx51tpwyyl"
+            class="textWrapper"
+            style="
+              font-family: Helvetica, Arial, Helvetica;
+              width: 8.61111111111111%;
+              line-height: 19px;
+              top: 2180px;
+              left: 37.01388888888887%;
+              position: absolute;
+            "
+          >
+            <div
+              style="
+                color: rgb(0, 0, 0);
+                font-size: 16px;
+                font-family: Helvetica, Arial, Helvetica;
+                margin: 0px;
+                max-width: 100%;
+                display: inherit;
+              "
+            >
+              <p>
+                <span style="font-size: 14px; color: rgb(250, 250, 250)"
+                  >Customer Care</span
+                >
+              </p>
+            </div>
+          </div>
+          <div
+            id="undefined_3iqa10xcsafh35etc1gb019k"
+            class="textWrapper"
+            style="
+              font-family: Helvetica, Arial, Helvetica;
+              width: 6.805555555555555%;
+              line-height: 19px;
+              top: 2179px;
+              left: 5.000000000000001%;
+              position: absolute;
+            "
+          >
+            <div
+              style="
+                color: rgb(0, 0, 0);
+                font-size: 16px;
+                font-family: Helvetica, Arial, Helvetica;
+                margin: 0px;
+                max-width: 100%;
+                display: inherit;
+              "
+            >
+              <p>
+                <span style="color: rgb(250, 250, 250); font-size: 14px"
+                  >Customer Care</span
+                >
+              </p>
+            </div>
+          </div>
+          <div
+            id="undefined_3iqa1sv770b5oob831cwdxep"
+            class="textWrapper"
+            style="
+              font-family: Helvetica, Arial, Helvetica;
+              width: 6.180555555555555%;
+              line-height: 19px;
+              top: 2080px;
+              left: 70.55555555555556%;
+              position: absolute;
+            "
+          >
+            <div
+              style="
+                color: rgb(0, 0, 0);
+                font-size: 16px;
+                font-family: Helvetica, Arial, Helvetica;
+                margin: 0px;
+                max-width: 100%;
+                display: inherit;
+              "
+            >
+              <p>
+                <span style="font-size: 14px; color: rgb(250, 250, 250)"
+                  >Miscelleous</span
+                >
+              </p>
+            </div>
+          </div>
+          <div
+            id="undefined_3iqalt7svr514rbg1iwdpb5"
+            class="textWrapper"
+            style="
+              font-family: Helvetica, Arial, Helvetica;
+              width: 5.555555555555555%;
+              line-height: 19px;
+              top: 2132px;
+              left: 4.930555555555555%;
+              position: absolute;
+            "
+          >
+            <div
+              style="
+                color: rgb(0, 0, 0);
+                font-size: 16px;
+                font-family: Helvetica, Arial, Helvetica;
+                margin: 0px;
+                max-width: 100%;
+                display: inherit;
+              "
+            >
+              <p>
+                <span style="color: rgb(246, 246, 244); font-size: 14px"
+                  >Newsroom</span
+                >
+              </p>
+            </div>
+          </div>
+          <div
+            id="undefined_3iqa1ukd4s4whiufl1fq8u4b"
+            class="textWrapper"
+            style="
+              font-family: Helvetica, Arial, Helvetica;
+              width: 5.555555555555555%;
+              line-height: 19px;
+              top: 2084px;
+              left: 4.9698912198912195%;
+              position: absolute;
+            "
+          >
+            <div
+              style="
+                color: rgb(0, 0, 0);
+                font-size: 16px;
+                font-family: Helvetica, Arial, Helvetica;
+                margin: 0px;
+                max-width: 100%;
+                display: inherit;
+              "
+            >
+              <p>
+                <span style="font-size: 14px; color: rgb(240, 243, 244)"
+                  >About Us</span
+                >
+              </p>
+            </div>
+          </div>
+          <div
+            id="undefined_3iqauyrwovga00yxcftdxg"
+            class="textWrapper"
+            style="
+              font-family: Helvetica, Arial, Helvetica;
+              width: 2.986111111111111%;
+              line-height: 19px;
+              top: 2137px;
+              left: 37.01388888888888%;
+              position: absolute;
+            "
+          >
+            <div
+              style="
+                color: rgb(0, 0, 0);
+                font-size: 16px;
+                font-family: Helvetica, Arial, Helvetica;
+                margin: 0px;
+                max-width: 100%;
+                display: inherit;
+              "
+            >
+              <p>
+                <span style="color: rgb(241, 244, 242); font-size: 14px"
+                  >CSR</span
+                >
+              </p>
+            </div>
+          </div>
+          <div
+            id="undefined_3iqa91pq5e12f5lol1k24k1c"
+            class="textWrapper"
+            style="
+              font-family: Helvetica, Arial, Helvetica;
+              width: 1.1805555555555556%;
+              line-height: 19px;
+              top: 2192px;
+              left: 58.68055555555556%;
+              position: absolute;
+            "
+          >
+            <div
+              style="
+                color: rgb(0, 0, 0);
+                font-size: 16px;
+                font-family: Helvetica, Arial, Helvetica;
+                margin: 0px;
+                max-width: 100%;
+                display: inherit;
+              "
+            >
+              <p>
+                <span style="color: rgb(249, 248, 246); font-size: 22px"
+                  >+</span
+                >
+              </p>
+            </div>
+          </div>
+          <div
+            id="undefined_3iqa1e98uwhruv9l32wbpim"
+            class="textWrapper"
+            style="
+              font-family: Helvetica, Arial, Helvetica;
+              width: 1.1805555555555556%;
+              line-height: 19px;
+              top: 2191px;
+              left: 92.29166666666664%;
+              position: absolute;
+            "
+          >
+            <div
+              style="
+                color: rgb(0, 0, 0);
+                font-size: 16px;
+                font-family: Helvetica, Arial, Helvetica;
+                margin: 0px;
+                max-width: 100%;
+                display: inherit;
+              "
+            >
+              <p>
+                <span style="font-size: 22px; color: rgb(249, 248, 246)"
+                  >+</span
+                >
+              </p>
+            </div>
+          </div>
+          <div
+            id="undefined_3iqazv0a2x1u90urp4hqjkd"
+            class="textWrapper"
+            style="
+              font-family: Helvetica, Arial, Helvetica;
+              width: 1.1805555555555556%;
+              line-height: 19px;
+              top: 2188px;
+              left: 26.52777777777778%;
+              position: absolute;
+            "
+          >
+            <div
+              style="
+                color: rgb(0, 0, 0);
+                font-size: 16px;
+                font-family: Helvetica, Arial, Helvetica;
+                margin: 0px;
+                max-width: 100%;
+                display: inherit;
+              "
+            >
+              <p>
+                <span style="font-size: 22px; color: rgb(249, 248, 246)"
+                  >+</span
+                >
+              </p>
+            </div>
+          </div>
+          <div
+            id="undefined_3iqavv96r91j7ekn7biiv6w"
+            class="textWrapper"
+            style="
+              font-family: Helvetica, Arial, Helvetica;
+              width: 1.1805555555555556%;
+              line-height: 19px;
+              top: 2144px;
+              left: 58.54166666666667%;
+              position: absolute;
+            "
+          >
+            <div
+              style="
+                color: rgb(0, 0, 0);
+                font-size: 16px;
+                font-family: Helvetica, Arial, Helvetica;
+                margin: 0px;
+                max-width: 100%;
+                display: inherit;
+              "
+            >
+              <p>
+                <span style="font-size: 22px; color: rgb(249, 248, 246)"
+                  >+</span
+                >
+              </p>
+            </div>
+          </div>
+          <div
+            id="undefined_3iqa6tkr9a10ci9ih7u3cx7"
+            class="textWrapper"
+            style="
+              font-family: Helvetica, Arial, Helvetica;
+              width: 1.1805555555555556%;
+              line-height: 19px;
+              top: 2142px;
+              left: 92.15277777777777%;
+              position: absolute;
+            "
+          >
+            <div
+              style="
+                color: rgb(0, 0, 0);
+                font-size: 16px;
+                font-family: Helvetica, Arial, Helvetica;
+                margin: 0px;
+                max-width: 100%;
+                display: inherit;
+              "
+            >
+              <p>
+                <span style="font-size: 22px; color: rgb(249, 248, 246)"
+                  >+</span
+                >
+              </p>
+            </div>
+          </div>
+          <div
+            id="undefined_3iqart0f3u19nz0vs1wosxlo"
+            class="textWrapper"
+            style="
+              font-family: Helvetica, Arial, Helvetica;
+              width: 1.1805555555555556%;
+              line-height: 19px;
+              top: 2140px;
+              left: 26.52777777777778%;
+              position: absolute;
+            "
+          >
+            <div
+              style="
+                color: rgb(0, 0, 0);
+                font-size: 16px;
+                font-family: Helvetica, Arial, Helvetica;
+                margin: 0px;
+                max-width: 100%;
+                display: inherit;
+              "
+            >
+              <p>
+                <span style="font-size: 22px; color: rgb(249, 248, 246)"
+                  >+</span
+                >
+              </p>
+            </div>
+          </div>
+          <div
+            id="undefined_3iqa1d23dh419x5mwz1e2eus1"
+            class="textWrapper"
+            style="
+              font-family: Helvetica, Arial, Helvetica;
+              width: 1.1805555555555556%;
+              line-height: 19px;
+              top: 2094px;
+              left: 58.54166666666667%;
+              position: absolute;
+            "
+          >
+            <div
+              style="
+                color: rgb(0, 0, 0);
+                font-size: 16px;
+                font-family: Helvetica, Arial, Helvetica;
+                margin: 0px;
+                max-width: 100%;
+                display: inherit;
+              "
+            >
+              <p>
+                <span style="font-size: 22px; color: rgb(249, 248, 246)"
+                  >+</span
+                >
+              </p>
+            </div>
+          </div>
+          <div
+            id="undefined_3iqa1d3fqwz10ke4zz1xb25gk"
+            class="textWrapper"
+            style="
+              font-family: Helvetica, Arial, Helvetica;
+              width: 1.1805555555555556%;
+              line-height: 19px;
+              top: 2092px;
+              left: 26.48067210567211%;
+              position: absolute;
+            "
+          >
+            <div
+              style="
+                color: rgb(0, 0, 0);
+                font-size: 16px;
+                font-family: Helvetica, Arial, Helvetica;
+                margin: 0px;
+                max-width: 100%;
+                display: inherit;
+              "
+            >
+              <p>
+                <span style="font-size: 22px; color: rgb(249, 248, 246)"
+                  >+</span
+                >
+              </p>
+            </div>
+          </div>
+          <div
+            id="undefined_3iqab8dfav1cm1i4q1xfbb61"
+            class="textWrapper"
+            style="
+              font-family: Helvetica, Arial, Helvetica;
+              width: 1.1805555555555556%;
+              line-height: 19px;
+              top: 2091px;
+              left: 92.15277777777777%;
+              position: absolute;
+            "
+          >
+            <div
+              style="
+                color: rgb(0, 0, 0);
+                font-size: 16px;
+                font-family: Helvetica, Arial, Helvetica;
+                margin: 0px;
+                max-width: 100%;
+                display: inherit;
+              "
+            >
+              <p>
+                <span style="color: rgb(249, 248, 246); font-size: 22px"
+                  >+</span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        id="row_3iqa1ald4nt1c71bc71pzpp2n"
+        class="row"
+        style="
+          padding: 0px 15px;
+          max-width: 100%;
+          min-height: 10px;
+          display: flex;
+          height: 52px;
+          border-radius: 0px;
+          background-color: rgb(32, 155, 127);
+        "
+      >
+        <div
+          id="col_3iqav4ye1m1cwxpct37sq2w"
+          class="column"
+          style="
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-position: top left;
+          "
+        >
+          <div
+            id="undefined_3iqa1btitjr1led9e213t6v7z"
+            class="textWrapper"
+            style="
+              font-family: Helvetica, Arial, Helvetica;
+              width: 30.694444444444446%;
+              line-height: 19px;
+              top: 2251px;
+              left: 67.70833333333334%;
+              position: absolute;
+            "
+          >
+            <div
+              style="
+                color: rgb(0, 0, 0);
+                font-size: 16px;
+                font-family: Helvetica, Arial, Helvetica;
+                margin: 0px;
+                max-width: 100%;
+                display: inherit;
+              "
+            >
+              <p>
+                <span style="font-size: 12px; color: rgb(255, 255, 255)"
+                  >© 2023 Ujjivan Small Finance Bank Ltd. CIN NO:
+                  L65110KA2016PLC142162</span
+                >
+              </p>
+            </div>
+          </div>
+          <div
+            id="undefined_3iqa1tyonvr1wzprxpw294ot"
+            class="textWrapper"
+            style="
+              font-family: Helvetica, Arial, Helvetica;
+              width: 16.38888888888889%;
+              line-height: 19px;
+              top: 2256px;
+              left: 5.138888888888888%;
+              position: absolute;
+            "
+          >
+            <div
+              style="
+                color: rgb(0, 0, 0);
+                font-size: 16px;
+                font-family: Helvetica, Arial, Helvetica;
+                margin: 0px;
+                max-width: 100%;
+                display: inherit;
+              "
+            >
+              <p>
+                <span style="color: rgb(245, 244, 245); font-size: 12px"
+                  >Careers | Important Notices | Sitemap</span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      *:focus {
+        outline: 0;
+      }
+
+      input {
+        border: none;
+      }
+
+      svg {
+        width: 100%;
+        height: 100%;
+      }
+
+      .subMenu_Holder {
+        display: none;
+        position: absolute;
+        min-width: 150px;
+        margin-top: 20px;
+      }
+
+      .mainMenuElement:hover > .subMenu_Holder {
+        display: block;
+      }
+
+      tspan {
+        font-family: inherit;
+        font-size: inherit;
+        color: inherit;
+        fill: currentColor;
+      }
+
+      /*responsive code start*/
+      .mobileLayout#html_content {
+        position: relative;
+        top: auto;
+        left: auto;
+      }
+      .mobileLayout .row {
+        height: auto !important;
+        flex-direction: column;
+      }
+      .mobileLayout .row#empty_row {
+        height: 0px !important;
+      }
+      .mobileLayout .row#templateRow {
+        display: none !important;
+      }
+
+      .mobileLayout .column {
+        width: 100% !important;
+        min-height: 100px;
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+      }
+      .mobileLayout .visiblerow .block {
+        top: auto !important;
+        left: auto !important;
+        position: relative !important;
+        transform: initial !important;
+        width: 100%;
+        text-align: center;
+      }
+      .mobileLayout .visiblerow .block a,
+      .mobileLayout .visiblerow .block div {
+        margin: 0 auto;
+      }
+      .mobileLayout .textWrapper {
+        max-width: 100%;
+        padding: 15px 10px;
+        text-align: center;
+      }
+      .mobileLayout .accordion {
+        width: 100% !important;
+      }
+      .mobileLayout form {
+        display: flex !important;
+        flex-direction: column;
+      }
+      .mobileLayout .slideshow-container {
+        width: 100% !important;
+      }
+      .mobileLayout .progress {
+        width: 100% !important;
+        min-width: 250px;
+      }
+      .mobileLayout .tableWrapper {
+        width: 100% !important;
+      }
+      .mobileLayout [tag="SearchBar"] {
+        width: 100% !important;
+      }
+      .mobileLayout [countertype="circle"] {
+        width: 100% !important;
+      }
+      .mobileLayout [countertype="number"] {
+        width: 250px !important;
+      }
+      .mobileLayout .videoOverLay {
+        width: 100% !important;
+      }
+      .mobileLayout #empty_row {
+        height: 0px;
+      }
+
+      /*responsive code ends*/
+      /*mediaquery*/
+      @media only screen and (min-width: 320px) and (max-width: 500px) {
+        body > div {
+          max-width: 100%;
+        }
+        #html_content {
+          position: relative;
+          top: auto;
+          left: auto;
+        }
+        .row {
+          height: auto !important;
+          flex-direction: column;
+          background-size: cover !important;
+        }
+        .row#empty_row {
+          height: 0px !important;
+        }
+        .row#templateRow {
+          display: none !important;
+        }
+
+        .column {
+          width: 100% !important;
+          min-height: 100px;
+          /* display: flex !important; */
+          display: grid !important;
+          flex-direction: column;
+          align-items: center;
+        }
+        .column + .column {
+          margin-top: 30px;
+        }
+        .block,
+        .column > a,
+        .column > div,
+        .column > img,
+        .column > p,
+        .column > button,
+        .column > hr {
+          top: auto !important;
+          left: auto !important;
+          position: relative !important;
+          transform: initial !important;
+        }
+        .column a {
+          max-width: 100%;
+        }
+        .column img {
+          width: 100% !important;
+        }
+        .visiblerow .block,
+        .visiblerow .column > div {
+          width: 100%;
+          text-align: center;
+        }
+        .textWrapper {
+          max-width: 100%;
+          padding: 15px 10px;
+          text-align: center;
+        }
+        .accordion {
+          width: 100% !important;
+        }
+        form {
+          display: flex !important;
+          flex-direction: column;
+        }
+        .slideshow-container {
+          width: 100% !important;
+        }
+        .progress {
+          width: 100% !important;
+          min-width: 250px;
+        }
+        .tableWrapper {
+          width: 100% !important;
+        }
+        [tag="SearchBar"] {
+          width: 100% !important;
+        }
+        [countertype="circle"] {
+          width: 100% !important;
+        }
+        [countertype="number"] {
+          width: 250px !important;
+        }
+        .videoOverLay {
+          width: 100% !important;
+        }
+        #empty_row {
+          height: 0px;
+        }
+      }
+
+      /*mediaquery end*/
+      @media only screen and (min-width: 320px) and (max-width: 500px) {
+        #menu_nd61vrjnimruupvhlr30zo {
+          margin: 10px 0;
+          grid-area: 1 / 1 / 2 / 2;
+          justify-self: center;
+          align-self: center;
+          display: grid !important;
+        }
+        #undefined_nd610e8gh61mnyjw21o8193o {
+          margin: 10px 0;
+          grid-area: 2 / 1 / 3 / 2;
+          justify-self: center;
+          align-self: center;
+        }
+        #undefined_nd6tg0e8f199jbdll5sj19 {
+          margin: 10px 0;
+          grid-area: 3 / 1 / 4 / 2;
+          justify-self: center;
+          align-self: center;
+        }
+        .svg_nd6gk5nk2eg72wu7p3pou {
+          margin: 10px 0;
+          grid-area: 4 / 1 / 5 / 2;
+          justify-self: center;
+          align-self: center;
+        }
+        #undefined_qhu1vbvixn14dd121nbhkz8 {
+          width: 100% !important;
+          /* height:72px !important;*/
+          height: auto !important;
+          margin: 10px 0;
+          grid-area: 1 / 1 / 2 / 2;
+          justify-self: center;
+          align-self: center;
+          /*background: url("");*/
+          /*background-position: center;*/
+        }
+        #undefined_qhveoniom1x0tub3vratk8 {
+          margin: 10px 0;
+          grid-area: 2 / 1 / 3 / 2;
+          justify-self: center;
+          align-self: center;
+          width: 100% !important;
+        }
+        #menu_qhv5dbidw168cmenbdmwgm {
+          margin: 10px 0;
+          grid-area: 3 / 1 / 4 / 2;
+          justify-self: center;
+          align-self: center;
+          display: grid !important;
+        }
+        #undefined_qhv902w6z1h77beu1mhjgqf {
+          margin: 10px 0;
+          grid-area: 4 / 1 / 5 / 2;
+          justify-self: center;
+          align-self: center;
+        }
+        #undefined_qhvwd2zjt1fdhiks13cur0k {
+          width: 100% !important;
+          /* height:19px !important;*/
+          height: auto !important;
+          margin: 10px 0;
+          grid-area: 2 / 1 / 3 / 2;
+          justify-self: center;
+          align-self: center;
+          /*background: url("");*/
+          /*background-position: center;*/
+        }
+        #undefined_qhv1sotmlj1u1g0eswwwo2e {
+          margin: 0;
+          grid-area: 6 / 1 / 7 / 2;
+          justify-self: center;
+          align-self: center;
+          width: 100% !important;
+        }
+        #undefined_qhv1e8bw2p1cuhfr1gmzhi9 {
+          margin: 0;
+          grid-area: 7 / 1 / 8 / 2;
+          justify-self: center;
+          align-self: center;
+          width: 100% !important;
+        }
+        #undefined_qhv1b9qypv1g42ht312lgq72 {
+          margin: 10px 0;
+          grid-area: 8 / 1 / 9 / 2;
+          justify-self: center;
+          align-self: center;
+        }
+        #undefined_z1utn7t3ge1ikh4rbmx2r {
+          margin: 0;
+          grid-area: 1 / 1 / 2 / 2;
+          justify-self: center;
+          align-self: center;
+          width: 100% !important;
+        }
+        #undefined_18n61q237oxx8lnhc1g7tp7c {
+          margin: 10px 0;
+          grid-area: 1 / 1 / 2 / 2;
+          justify-self: center;
+          align-self: center;
+          width: 100% !important;
+        }
+        #undefined_18n61f8prfa1jerlnze2ot12 {
+          width: 115px !important;
+          /* height:148px !important;*/
+          height: auto !important;
+          margin: 10px 0;
+          grid-area: 1 / 1 / 2 / 2;
+          justify-self: center;
+          align-self: center;
+          /*background: url("");*/
+          /*background-position: center;*/
+        }
+        #undefined_18n6wq34poz96o6n1b2w8qn {
+          margin: 0;
+          grid-area: 3 / 1 / 4 / 2;
+          justify-self: center;
+          align-self: center;
+          width: 100% !important;
+        }
+        #undefined_18n6e1x2qq1xksvq2u6md5j {
+          margin: 0;
+          grid-area: 4 / 1 / 5 / 2;
+          justify-self: center;
+          align-self: center;
+          width: 100% !important;
+        }
+        #undefined_18n6nh3py01m453va1is61x4 {
+          margin: 10px 0;
+          grid-area: 1 / 1 / 2 / 2;
+          justify-self: center;
+          align-self: center;
+          width: 100% !important;
+        }
+        #undefined_18n61b5qvce1h0r70h1onkl30 {
+          width: 115px !important;
+          /* height:148px !important;*/
+          height: auto !important;
+          margin: 10px 0;
+          grid-area: 1 / 1 / 2 / 2;
+          justify-self: center;
+          align-self: center;
+          /*background: url("");*/
+          /*background-position: center;*/
+        }
+        #undefined_18n6gfbj0z4tdk60cei18m {
+          margin: 0;
+          grid-area: 3 / 1 / 4 / 2;
+          justify-self: center;
+          align-self: center;
+          width: 100% !important;
+        }
+        #undefined_18n61ee0zvu1bdmgiiptv6y3 {
+          margin: 0;
+          grid-area: 4 / 1 / 5 / 2;
+          justify-self: center;
+          align-self: center;
+          width: 100% !important;
+        }
+        #undefined_18n6ds8qk91l1ub5a17yu4gx {
+          margin: 10px 0;
+          grid-area: 1 / 1 / 2 / 2;
+          justify-self: center;
+          align-self: center;
+          width: 100% !important;
+        }
+        #undefined_18n61xp86r6wzfdrbwe8rkx {
+          width: 118px !important;
+          /* height:152px !important;*/
+          height: auto !important;
+          margin: 10px 0;
+          grid-area: 1 / 1 / 2 / 2;
+          justify-self: center;
+          align-self: center;
+          /*background: url("");*/
+          /*background-position: center;*/
+        }
+        #undefined_18n6eyqpsc1umm7814miq20 {
+          margin: 0;
+          grid-area: 3 / 1 / 4 / 2;
+          justify-self: center;
+          align-self: center;
+          width: 100% !important;
+        }
+        #undefined_18n61y5pzcw9km1dp1gij3rf {
+          margin: 0;
+          grid-area: 4 / 1 / 5 / 2;
+          justify-self: center;
+          align-self: center;
+          width: 100% !important;
+        }
+        #undefined_1fu11cfmji1m8jwnejfieg3 {
+          width: 100% !important;
+          /* height:48px !important;*/
+          height: auto !important;
+          margin: 10px 0;
+          grid-area: 1 / 1 / 2 / 2;
+          justify-self: center;
+          align-self: center;
+          /*background: url("");*/
+          /*background-position: center;*/
+        }
+        #undefined_2avey9aegxuscpa91eylc9t {
+          margin: 0;
+          grid-area: 1 / 1 / 2 / 2;
+          justify-self: center;
+          align-self: center;
+          width: 100% !important;
+        }
+        #undefined_2avel41kb11pznmps19ofoz {
+          width: 220px !important;
+          /* height:257px !important;*/
+          height: auto !important;
+          margin: 10px 0;
+          grid-area: 2 / 1 / 3 / 2;
+          justify-self: center;
+          align-self: center;
+          /*background: url("");*/
+          /*background-position: center;*/
+        }
+        #undefined_2ave1bcpvg21j91pnk5wglqo {
+          margin: 10px 0;
+          grid-area: 3 / 1 / 4 / 2;
+          justify-self: center;
+          align-self: center;
+          width: 100% !important;
+        }
+        #undefined_2aveu0v4vh1h8ykry6ikd93 {
+          width: 109px !important;
+          /* height:127px !important;*/
+          height: auto !important;
+          margin: 10px 0;
+          grid-area: 3 / 1 / 4 / 2;
+          justify-self: center;
+          align-self: center;
+          /*background: url("");*/
+          /*background-position: center;*/
+        }
+        #undefined_2ave3aw90z1cq922991hq0k {
+          margin: 0;
+          grid-area: 5 / 1 / 6 / 2;
+          justify-self: center;
+          align-self: center;
+          width: 100% !important;
+        }
+        #undefined_2aveydoq2e11a3fhz1bxskrj {
+          margin: 0;
+          grid-area: 6 / 1 / 7 / 2;
+          justify-self: center;
+          align-self: center;
+          width: 100% !important;
+        }
+        #undefined_2ave1h1nsdm14v7r3s2wm7u9 {
+          width: 220px !important;
+          /* height:257px !important;*/
+          height: auto !important;
+          margin: 10px 0;
+          grid-area: 7 / 1 / 8 / 2;
+          justify-self: center;
+          align-self: center;
+          /*background: url("");*/
+          /*background-position: center;*/
+        }
+        #undefined_2aveqlxprb5uqyafq9isx {
+          margin: 10px 0;
+          grid-area: 8 / 1 / 9 / 2;
+          justify-self: center;
+          align-self: center;
+          width: 100% !important;
+        }
+        #undefined_2avecdu99e1lpibiu1k56t8c {
+          width: 109px !important;
+          /* height:127px !important;*/
+          height: auto !important;
+          margin: 10px 0;
+          grid-area: 8 / 1 / 9 / 2;
+          justify-self: center;
+          align-self: center;
+          /*background: url("");*/
+          /*background-position: center;*/
+        }
+        #undefined_2ave12y8fx1ajpv4k11vk66w {
+          margin: 0;
+          grid-area: 10 / 1 / 11 / 2;
+          justify-self: center;
+          align-self: center;
+          width: 100% !important;
+        }
+        #undefined_2aveywxw4dwxcjd51b4tar0 {
+          margin: 0;
+          grid-area: 11 / 1 / 12 / 2;
+          justify-self: center;
+          align-self: center;
+          width: 100% !important;
+        }
+        #undefined_374a19rl0sbqok23jpc7ttr {
+          width: 100% !important;
+          /* height:39px !important;*/
+          height: auto !important;
+          margin: 10px 0;
+          grid-area: 1 / 1 / 2 / 2;
+          justify-self: center;
+          align-self: center;
+          /*background: url("");*/
+          /*background-position: center;*/
+        }
+        #undefined_3iqa1sv770b5oob831cwdxep {
+          margin: 0;
+          grid-area: 1 / 1 / 2 / 2;
+          justify-self: center;
+          align-self: center;
+          width: 100% !important;
+        }
+        #undefined_3iqap8tmnp2xsg1g1ubh64e {
+          margin: 0;
+          grid-area: 2 / 1 / 3 / 2;
+          justify-self: center;
+          align-self: center;
+          width: 100% !important;
+        }
+        #undefined_3iqaoe36usyi3u1s1vhx0hn {
+          margin: 10px 0;
+          grid-area: 3 / 1 / 4 / 2;
+          justify-self: center;
+          align-self: center;
+          width: 100% !important;
+        }
+        #undefined_3iqa1d23dh419x5mwz1e2eus1 {
+          margin: 0;
+          grid-area: 4 / 1 / 5 / 2;
+          justify-self: center;
+          align-self: center;
+          width: 100% !important;
+        }
+        #undefined_3iqacnwrs6u30s7dyq221p {
+          margin: 10px 0;
+          grid-area: 5 / 1 / 6 / 2;
+          justify-self: center;
+          align-self: center;
+          width: 100% !important;
+        }
+        #undefined_3iqa23t96217skrlaq34nmu {
+          margin: 10px 0;
+          grid-area: 6 / 1 / 7 / 2;
+          justify-self: center;
+          align-self: center;
+          width: 100% !important;
+        }
+        #undefined_3iqa10qfbu41i4aaz7x9gwkb {
+          margin: 0;
+          grid-area: 7 / 1 / 8 / 2;
+          justify-self: center;
+          align-self: center;
+          width: 100% !important;
+        }
+        #undefined_3iqauyrwovga00yxcftdxg {
+          margin: 0;
+          grid-area: 8 / 1 / 9 / 2;
+          justify-self: center;
+          align-self: center;
+          width: 100% !important;
+        }
+        #undefined_3iqa45qclgk9p3ecvtjm5z {
+          margin: 10px 0;
+          grid-area: 9 / 1 / 10 / 2;
+          justify-self: center;
+          align-self: center;
+          width: 100% !important;
+        }
+        #undefined_3iqavv96r91j7ekn7biiv6w {
+          margin: 0;
+          grid-area: 10 / 1 / 11 / 2;
+          justify-self: center;
+          align-self: center;
+          width: 100% !important;
+        }
+        #undefined_3iqa1hbbol3solth55eomnn {
+          margin: 10px 0;
+          grid-area: 11 / 1 / 12 / 2;
+          justify-self: center;
+          align-self: center;
+          width: 100% !important;
+        }
+        #undefined_3iqaefs8fpfkt2bk1oedhuv {
+          margin: 10px 0;
+          grid-area: 12 / 1 / 13 / 2;
+          justify-self: center;
+          align-self: center;
+          width: 100% !important;
+        }
+        #undefined_3iqa1n9ra621d9cpx51tpwyyl {
+          margin: 0;
+          grid-area: 13 / 1 / 14 / 2;
+          justify-self: center;
+          align-self: center;
+          width: 100% !important;
+        }
+        #undefined_3iqa1q042z0ti58eq1bg5rnb {
+          margin: 0;
+          grid-area: 14 / 1 / 15 / 2;
+          justify-self: center;
+          align-self: center;
+          width: 100% !important;
+        }
+        #undefined_3iqa83lqvj1r0hmybzj8lc1 {
+          margin: 10px 0;
+          grid-area: 15 / 1 / 16 / 2;
+          justify-self: center;
+          align-self: center;
+          width: 100% !important;
+        }
+        #undefined_3iqa1773ufimorp7c1u2tmu6 {
+          margin: 10px 0;
+          grid-area: 16 / 1 / 17 / 2;
+          justify-self: center;
+          align-self: center;
+          width: 100% !important;
+        }
+        #undefined_3iqa91pq5e12f5lol1k24k1c {
+          margin: 0;
+          grid-area: 17 / 1 / 18 / 2;
+          justify-self: center;
+          align-self: center;
+          width: 100% !important;
+        }
+        #undefined_3iqa23f7qustoj8w1dih1ku {
+          margin: 10px 0;
+          grid-area: 18 / 1 / 19 / 2;
+          justify-self: center;
+          align-self: center;
+          width: 100% !important;
+        }
+        #undefined_3iqa13xapkt1v67uni1fc6rfg {
+          width: 100% !important;
+          /* height:19px !important;*/
+          height: auto !important;
+          margin: 10px 0;
+          grid-area: 19 / 1 / 20 / 2;
+          justify-self: center;
+          align-self: center;
+          /*background: url("");*/
+          /*background-position: center;*/
+        }
+        #undefined_3iqa1ukd4s4whiufl1fq8u4b {
+          margin: 0;
+          grid-area: 20 / 1 / 21 / 2;
+          justify-self: center;
+          align-self: center;
+          width: 100% !important;
+        }
+        #undefined_3iqa1d3fqwz10ke4zz1xb25gk {
+          margin: 0;
+          grid-area: 21 / 1 / 22 / 2;
+          justify-self: center;
+          align-self: center;
+          width: 100% !important;
+        }
+        #undefined_3iqalt7svr514rbg1iwdpb5 {
+          margin: 0;
+          grid-area: 22 / 1 / 23 / 2;
+          justify-self: center;
+          align-self: center;
+          width: 100% !important;
+        }
+        #undefined_3iqart0f3u19nz0vs1wosxlo {
+          margin: 0;
+          grid-area: 23 / 1 / 24 / 2;
+          justify-self: center;
+          align-self: center;
+          width: 100% !important;
+        }
+        #undefined_3iqa10xcsafh35etc1gb019k {
+          margin: 0;
+          grid-area: 24 / 1 / 25 / 2;
+          justify-self: center;
+          align-self: center;
+          width: 100% !important;
+        }
+        #undefined_3iqazv0a2x1u90urp4hqjkd {
+          margin: 0;
+          grid-area: 25 / 1 / 26 / 2;
+          justify-self: center;
+          align-self: center;
+          width: 100% !important;
+        }
+        #undefined_3iqab8dfav1cm1i4q1xfbb61 {
+          margin: 0;
+          grid-area: 26 / 1 / 27 / 2;
+          justify-self: center;
+          align-self: center;
+          width: 100% !important;
+        }
+        #undefined_3iqa6tkr9a10ci9ih7u3cx7 {
+          margin: 0;
+          grid-area: 27 / 1 / 28 / 2;
+          justify-self: center;
+          align-self: center;
+          width: 100% !important;
+        }
+        #undefined_3iqa1e98uwhruv9l32wbpim {
+          margin: 0;
+          grid-area: 28 / 1 / 29 / 2;
+          justify-self: center;
+          align-self: center;
+          width: 100% !important;
+        }
+        #undefined_3iqa1tyonvr1wzprxpw294ot {
+          margin: 0;
+          grid-area: 1 / 1 / 2 / 2;
+          justify-self: center;
+          align-self: center;
+          width: 100% !important;
+        }
+        #undefined_3iqa1btitjr1led9e213t6v7z {
+          margin: 0;
+          grid-area: 2 / 1 / 3 / 2;
+          justify-self: center;
+          align-self: center;
+          width: 100% !important;
+        }
+      }
+    </style>
+  </body>
+
+  <script>
+    // Function to handle scaling the website horizontally
+    const scaleWebsiteToFitWindow = () => {
+      const rootElement = document.documentElement;
+      const windowWidth = window.innerWidth;
+      //   const windowWidth = rootElement.childNodes[2].childNodes[1].style.width;
+      const originalWidth = rootElement.scrollWidth;
+
+      const maxScale = 1.5; // Set a maximum scale value (adjust as needed)
+
+      // Calculate the scale factor to fit the website into the window horizontally
+      let scale = windowWidth / originalWidth - 0.019;
+      // Increase scale if the window is bigger, but limit it to the maxScale value
+      if (windowWidth > originalWidth) {
+        debugger;
+        let scale =
+          originalWidth /
+            parseInt(rootElement.childNodes[2].childNodes[1].style.width) -
+          0.01;
+        // scale = 1.09;
+        rootElement.childNodes[2].childNodes[1].style.transform =
+          "scaleX(" + scale + ")";
+        rootElement.childNodes[2].childNodes[1].style.transform =
+          "scaleX(" + scale + ")";
+      } else {
+        rootElement.style.transform = "scaleX(" + scale + ")";
+        rootElement.style.transformOrigin = "left top";
+      }
+
+      // Apply the scale and translation as a CSS transform
+    };
+
+    // Call the scaleWebsiteToFitWindow function when the page loads
+    scaleWebsiteToFitWindow();
+
+    // Attach an event listener to the window's resize event
+    window.addEventListener("resize", scaleWebsiteToFitWindow);
+  </script>
+</html>
+
